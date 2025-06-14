@@ -15,46 +15,78 @@ const features = [
   {
     icon: <Globe size={28} />,
     title: "Web Testing",
-    desc: "Codeless Selenium-based tests with smart locators.",
-    points: ["Smart XPath", "Record & Play", "Cross-browser"]
-  },
-  {
-    icon: <Network size={28} />,
-    title: "API Testing",
-    desc: "Validate REST/SOAP services & chain with UI flows.",
-    points: ["Assertions", "Test variables", "JSON/XML"]
-  },
-  {
-    icon: <Database size={28} />,
-    title: "Database Testing",
-    desc: "Automate backend DB checks and validations.",
-    points: ["Pre/post test queries", "No SQL needed"]
-  },
-  {
-    icon: <GaugeCircle size={28} />,
-    title: "Performance Testing",
-    desc: "Stress test apps at scale with unified reporting.",
-    points: ["Cloud scalability", "Run 1000s of sessions"]
+    desc: "Create robust tests without writing code, using smart XPath and resilient locators.",
+    points: [
+      "True codeless test authoring",
+      "Smart XPath with Record & Play",
+      "Cross-browser ready",
+      "Built on Selenium without the complexity"
+    ]
   },
   {
     icon: <AppWindow size={28} />,
     title: "Desktop Testing",
-    desc: "Automate Windows legacy and modern desktop apps.",
-    points: ["No-code image recognition", "Legacy support"]
+    desc: "Automate thick client and legacy desktop apps using image recognition and OCR.",
+    points: [
+      "Works with modern and legacy Windows apps",
+      "Image recognition & OCR powered by SikuliX",
+      "No-code automation for desktop environments"
+    ]
   },
   {
     icon: <Smartphone size={28} />,
     title: "Mobile Testing",
-    desc: "Test native & hybrid apps on iOS and Android.",
-    points: ["Real devices & emulators", "No scripting"]
+    desc: "Test native and hybrid apps on emulators or real devices, at scale.",
+    points: [
+      "Supports Android & iOS emulators",
+      "Cloud-scale parallel execution",
+      "Real device compatibility",
+      "Powered by Appium without the hassle"
+    ]
+  },
+  {
+    icon: <Network size={28} />,
+    title: "API Testing",
+    desc: "Easily test REST and SOAP web services with variable creation and validation.",
+    points: [
+      "Test REST & SOAP endpoints",
+      "Validate JSON & XML responses",
+      "Use API calls to define dynamic test variables"
+    ]
+  },
+  {
+    icon: <Database size={28} />,
+    title: "Database Testing",
+    desc: "Validate backend data or build data-driven tests using your existing databases.",
+    points: [
+      "Works with major SQL/NoSQL systems",
+      "Read, verify, or inject test data",
+      "Supports Excel-driven workflows"
+    ]
+  },
+  {
+    icon: <GaugeCircle size={28} />,
+    title: "Load Testing",
+    desc: "Scale test coverage from functional to thousands of virtual users — no extra tools.",
+    points: [
+      "Reuse functional tests for load scenarios",
+      "REST, headless, or real browser support",
+      "Scales to tens of thousands of virtual users",
+      "Built on JMeter without the overhead"
+    ]
   },
   {
     icon: <Eye size={28} />,
-    title: "Accessibility",
-    desc: "Run 508 compliance checks and reports.",
-    points: ["CI/CD ready", "Automated scans"]
+    title: "Accessibility Testing",
+    desc: "Ensure compliance by reusing your existing functional tests for accessibility scans.",
+    points: [
+      "508 compliance checks baked in",
+      "Compare changes sprint-to-sprint",
+      "Advanced accessibility coming soon"
+    ]
   }
 ];
+
 
 const Testing = () => (
   <section className="bg-gray-950 text-white py-20 px-4 sm:px-6 lg:px-8 mt-8 mb-16">
