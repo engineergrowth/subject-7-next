@@ -100,7 +100,7 @@ export default function Contact() {
               htmlFor="form-field-description"
               className="block text-sm font-medium text-white mb-1"
             >
-              Notes
+              Message
             </label>
             <textarea
               name="form_fields[description]"
