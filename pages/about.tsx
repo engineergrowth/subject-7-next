@@ -1,52 +1,53 @@
-const AboutUs = () => (
-  <section className="bg-gray-950 text-white py-24 px-4 sm:px-6 lg:px-8 mt-8 mb-16">
-    <div className="max-w-6xl mx-auto text-center mb-16">
-      <h2 className="text-4xl sm:text-5xl md:text-6xl font-extrabold bg-gradient-to-r from-white via-blue-100 to-purple-200 bg-clip-text text-transparent leading-snug tracking-tight sm:leading-[1.2] md:leading-[1.25] mb-4">
-        About Subject7
-      </h2>
-      <div className="text-lg sm:text-xl text-gray-400 max-w-3xl mx-auto space-y-6 mt-8">
-
-    <p>
-        Subject7 was founded in Maryland in 2011 by a small group of software architects who saw a problem and decided to fix it. Test automation was too technical, too fragmented, and out of reach for many teams. They believed there had to be a better way to deliver quality software without needing to write mountains of code.
-    </p>
-
-    <p>
-        What came next was a cloud-first platform built on trusted automation engines like Selenium, but redesigned with a codeless, user-friendly interface. From web to mobile to desktop, Subject7 made it possible for both technical and non-technical users to build powerful end-to-end tests in one place.
-    </p>
-
-    <p>
-        As more customers came on board, the platform grew with them. Government agencies, large enterprises, and fast-moving teams shaped the roadmap. Security and compliance became a core part of the product, leading to SOC 2 Type II certification and native 508 accessibility testing.
-    </p>
-
-    <p>
-        Today, Subject7 is used by some of the most demanding teams in the world. The platform continues to evolve, but the heart of the company stays the same. We’re here to make testing easier, faster, and more reliable for everyone involved.
-    </p>
-    </div>
-
-
-
-    </div>
-
-    <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-center gap-10">
-      {/* CEO Image */}
-      <img
-        src="/z.webp"
-        alt="CEO"
-        className="w-48 h-48 rounded-2xl object-cover border border-gray-700"
-      />
-
-      {/* Quote */}
-      <div>
-        <blockquote className="text-xl text-gray-300 italic mb-4 leading-relaxed">
-          “Everything we build at Subject7 is driven by two things: customer feedback and real-world reliability.
-          My job is making sure we stay ahead without ever losing sight of what our users need.”
-        </blockquote>
-        <cite className="block text-sm text-gray-500 not-italic font-medium">
-          — Kezia Braithwaite, CEO of Subject7
-        </cite>
+const About = () => {
+  return (
+    <section className="bg-gray-950 text-white py-24 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto text-center mb-20">
+        <h2 className="text-5xl sm:text-6xl font-extrabold bg-gradient-to-r from-white via-blue-100 to-purple-200 bg-clip-text text-transparent leading-tight">
+          Built by Testers.<br /> Trusted by the Enterprise.
+        </h2>
+        <p className="mt-6 text-lg sm:text-xl text-gray-400 max-w-3xl mx-auto">
+          Subject7 was born from real frustration with brittle, slow, and overly technical automation tools. Since day one, our mission has been simple: make testing fast, scalable, and accessible to everyone.
+        </p>
       </div>
-    </div>
-  </section>
-);
 
-export default AboutUs;
+      <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-12 mb-24">
+        <div className="bg-gray-900/50 p-8 rounded-2xl border border-gray-800 shadow-lg hover:bg-gray-900/70 transition">
+          <h3 className="text-2xl font-semibold mb-4">Where We Started</h3>
+          <p className="text-gray-400">
+            Founded by senior engineers in Maryland, Subject7 began as an internal tool to simplify testing. The goal was to bring true automation power to technical and non-technical teams alike — no flaky scripts, no bottlenecks.
+          </p>
+        </div>
+        <div className="bg-gray-900/50 p-8 rounded-2xl border border-gray-800 shadow-lg hover:bg-gray-900/70 transition">
+          <h3 className="text-2xl font-semibold mb-4">What We Built</h3>
+          <p className="text-gray-400">
+            A cloud-first platform leveraging open-source engines like Selenium — wrapped in a resilient, codeless UI. From web to mobile to desktop, we support full-stack automation with zero compromise.
+          </p>
+        </div>
+        <div className="bg-gray-900/50 p-8 rounded-2xl border border-gray-800 shadow-lg hover:bg-gray-900/70 transition">
+          <h3 className="text-2xl font-semibold mb-4">Where We Are Now</h3>
+          <p className="text-gray-400">
+            Today, Subject7 supports mission-critical testing for government agencies and global enterprises. With SOC 2 Type II certification and built-in 508 accessibility, we’re built for scale, security, and speed.
+          </p>
+        </div>
+      </div>
+
+      <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-10">
+        <img
+          src="/z.webp"
+          alt="CEO"
+          className="w-48 h-48 rounded-2xl object-cover border border-gray-700"
+        />
+        <div className="text-left">
+          <blockquote className="text-xl text-gray-300 italic mb-4 leading-relaxed">
+            “Everything we build at Subject7 is driven by two things: customer feedback and real-world reliability. My job is making sure we stay ahead without ever losing sight of what our users need.”
+          </blockquote>
+          <cite className="block text-sm text-gray-500 not-italic font-medium">
+            — Kezia Braithwaite, CEO of Subject7
+          </cite>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default About;
