@@ -13,7 +13,7 @@ import { Button } from "@/components/ui/button";
 
 const features = [
   {
-    icon: <Globe size={28} />,
+    icon: Globe,
     title: "Web Testing",
     desc: "Create robust tests without writing code, using smart XPath and resilient locators.",
     points: [
@@ -24,7 +24,7 @@ const features = [
     ]
   },
   {
-    icon: <AppWindow size={28} />,
+    icon: AppWindow,
     title: "Desktop Testing",
     desc: "Automate thick client and legacy desktop apps using image recognition and OCR.",
     points: [
@@ -34,7 +34,7 @@ const features = [
     ]
   },
   {
-    icon: <Smartphone size={28} />,
+    icon: Smartphone,
     title: "Mobile Testing",
     desc: "Test native and hybrid apps on emulators or real devices, at scale.",
     points: [
@@ -45,7 +45,7 @@ const features = [
     ]
   },
   {
-    icon: <Network size={28} />,
+    icon: Network,
     title: "API Testing",
     desc: "Easily test REST and SOAP web services with variable creation and validation.",
     points: [
@@ -55,7 +55,7 @@ const features = [
     ]
   },
   {
-    icon: <Database size={28} />,
+    icon: Database,
     title: "Database Testing",
     desc: "Validate backend data or build data-driven tests using your existing databases.",
     points: [
@@ -65,7 +65,7 @@ const features = [
     ]
   },
   {
-    icon: <GaugeCircle size={28} />,
+    icon: GaugeCircle,
     title: "Load Testing",
     desc: "Scale test coverage from functional to thousands of virtual users — no extra tools.",
     points: [
@@ -76,7 +76,7 @@ const features = [
     ]
   },
   {
-    icon: <Eye size={28} />,
+    icon: Eye,
     title: "Accessibility Testing",
     desc: "Ensure compliance by reusing your existing functional tests for accessibility scans.",
     points: [
@@ -87,59 +87,60 @@ const features = [
   }
 ];
 
-
 const Testing = () => (
-  <section className="bg-gray-950 text-white py-20 px-4 sm:px-6 lg:px-8 mt-8 mb-16">
-    <div className="max-w-6xl mx-auto">
-      <div className="max-w-7xl mx-auto text-center">
-        <h1 className="text-4xl sm:text-6xl md:text-7xl font-extrabold bg-gradient-to-r from-white via-blue-100 to-purple-200 bg-clip-text text-transparent leading-snug tracking-tight sm:leading-[1.2] md:leading-[1.25] pb-2">
-          One Platform.<br />
-          Total Test Coverage.
-        </h1>
+  <section className="bg-gray-950 text-white py-24 px-4 sm:px-6 lg:px-8">
+    <div className="max-w-6xl mx-auto text-center">
+      <h1 className="text-5xl sm:text-6xl font-extrabold bg-gradient-to-r from-white via-blue-100 to-purple-200 bg-clip-text text-transparent leading-tight mb-6">
+        Total Test Coverage.
+      </h1>
+      <p className="text-xl text-gray-400 max-w-3xl mx-auto">
+        Subject7 supports every layer of your QA strategy — from browser to backend and everything in between.
+      </p>
+    </div>
 
-        <p className="text-xl md:text-2xl text-gray-300 mt-6 max-w-3xl mx-auto">
-          Subject7 empowers teams to automate web, desktop, mobile, API, and database testing — all in one unified interface.
-        </p>
-      </div>
-
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-16">
-        {features.map((f, i) => (
-          <div
-            key={i}
-            className="bg-gray-900 border border-gray-800 rounded-xl p-6 hover:bg-gray-800 transition group"
-          >
-            <div className="mb-4 flex items-center space-x-3">
-              <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-purple-600 to-indigo-600 flex items-center justify-center">
-                {React.cloneElement(f.icon, { className: "text-white", size: 24 })}
-              </div>
-              <h3 className="text-xl font-semibold">{f.title}</h3>
+    <div className="max-w-7xl mx-auto mt-24 space-y-16">
+      {features.map((f, i) => (
+        <div
+          key={i}
+          className={`flex flex-col-reverse md:flex-row items-center md:items-start gap-10 ${
+            i % 2 !== 0 ? "md:flex-row-reverse" : ""
+          }`}
+        >
+          {/* Icon & Title Block */}
+          <div className="flex-shrink-0 w-full md:w-1/3 flex flex-col items-center md:items-start text-center md:text-left">
+            <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-purple-600 to-indigo-600 flex items-center justify-center mb-4">
+              <f.icon className="text-white" size={28} />
             </div>
-            <p className="text-gray-400 mb-3">{f.desc}</p>
-            <ul className="text-sm text-gray-500 list-disc pl-5 space-y-1">
+            <h3 className="text-2xl font-semibold mb-2">{f.title}</h3>
+            <p className="text-gray-400">{f.desc}</p>
+          </div>
+
+          {/* Bullet Points */}
+          <div className="w-full md:w-2/3 bg-gray-900/50 p-6 rounded-xl border border-gray-800 shadow-lg">
+            <ul className="text-sm text-gray-400 space-y-2 list-disc pl-6">
               {f.points.map((pt, j) => (
                 <li key={j}>{pt}</li>
               ))}
             </ul>
           </div>
-        ))}
-      </div>
+        </div>
+      ))}
+    </div>
 
-      {/* CTA Block */}
-      <div className="text-center mt-20">
-        <Card className="bg-gray-800/50 border-gray-700 p-8 max-w-3xl mx-auto">
-          <CardContent className="p-0">
-            <h3 className="text-xl font-bold text-white mb-4">
-              Ready to see how this all works in action? We’ll walk you through it.
-            </h3>
-            <Button
-              size="lg"
-              className="bg-gradient-to-r from-[#5B21B6] to-[#7E22CE] hover:from-[#4C1D95] hover:to-[#6B21A8] text-white px-8 py-4 text-lg shadow-lg"
-            >
-              Book a Live Demo
-            </Button>
-          </CardContent>
-        </Card>
-      </div>
+    <div className="text-center mt-28">
+      <Card className="bg-gray-900 border border-gray-700 p-10 max-w-3xl mx-auto shadow-xl">
+        <CardContent className="p-0">
+          <h3 className="text-2xl font-semibold text-white mb-6">
+            Want to see how it works together in real time?
+          </h3>
+          <Button
+            size="lg"
+            className="bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 text-white px-8 py-4 text-lg shadow-lg"
+          >
+            Book a Live Demo
+          </Button>
+        </CardContent>
+      </Card>
     </div>
   </section>
 );
