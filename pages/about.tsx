@@ -26,7 +26,7 @@ const About = () => {
         <div className="bg-gray-900/50 p-8 rounded-2xl border border-gray-800 shadow-lg hover:bg-gray-900/70 transition">
           <h3 className="text-2xl font-semibold mb-4">Where We Are Now</h3>
           <p className="text-gray-400">
-            Today, Subject7 supports mission-critical testing for government agencies and global enterprises. With SOC 2 Type II certification and built-in 508 accessibility, we’re built for scale, security, and speed.
+            Today, Subject7 powers automation at scale for some of the most demanding teams in the world. From public agencies to global enterprises, we support millions of test runs across every major testing surface.
           </p>
         </div>
       </div>
