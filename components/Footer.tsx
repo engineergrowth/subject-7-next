@@ -4,7 +4,7 @@ import { Facebook, Linkedin, Twitter, Instagram } from "lucide-react";
 const Footer = () => {
   const mainLinks = [
     { label: "Home", href: "/" },
-    { label: "Features", href: "/testing" },
+    { label: "Testing", href: "/testing" },
     { label: "About", href: "/about" },
     { label: "Contact", href: "/contact" },
   ];
