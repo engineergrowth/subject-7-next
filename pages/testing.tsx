@@ -16,50 +16,53 @@ const features = [
   {
     icon: <Globe size={28} />,
     title: "Web Testing",
-    desc: "Codeless Selenium-based tests with smart locators.",
+    desc: "Web Testing: Every page. Every click. Flawless, every time.",
     points: ["Smart XPath", "Record & Play", "Cross-browser"]
   },
   {
     icon: <Network size={28} />,
     title: "API Testing",
-    desc: "Validate REST/SOAP services & chain with UI flows.",
-    points: ["Assertions", "Test variables", "JSON/XML"]
+    desc: "Endpoints verfied. Data validated.",
+    points: ["REST & SOAP", "OAuth 2.0", "JSON/XML"]
   },
   {
     icon: <Database size={28} />,
     title: "Database Testing",
-    desc: "Automate backend DB checks and validations.",
-    points: ["Pre/post test queries", "No SQL needed"]
+    desc: "Integrity intact. Queries exact.",
+    points: ["MY_SQL", "Oracle", "PostgreSQL & More"]
   },
   {
     icon: <GaugeCircle size={28} />,
     title: "Performance Testing",
-    desc: "Stress test apps at scale with unified reporting.",
-    points: ["Cloud scalability", "Run 1000s of sessions"]
+    desc: "Peak load. Peak performance.",
+    points: ["Cloud scalability", "Run 1000's of sessions"]
   },
   {
     icon: <AppWindow size={28} />,
     title: "Desktop Testing",
-    desc: "Automate Windows legacy and modern desktop apps.",
-    points: ["No-code image recognition", "Legacy support"]
+    desc: "Pixel Perfect. Zero downtime.",
+    points: ["Image/text recognition", "Legacy support"]
   },
   {
     icon: <Smartphone size={28} />,
     title: "Mobile Testing",
-    desc: "Test native & hybrid apps on iOS and Android.",
+    desc: "Every device, every gesture.",
     points: ["Real devices & emulators", "No scripting"]
-  },
-  {
-    icon: <Lock size={28} />,
-    title: "Security Testing",  
-    desc: "Automate security checks and vulnerability scans.",
-    points: ["1", "2"]
-  },
-  {
-    icon: <Eye size={28} />,
-    title: "Accessibility",
-    desc: "Run 508 compliance checks and reports.",
-    points: ["CI/CD ready", "Automated scans"]
+
+    // TODO: figure these out with the team.
+  // },
+  // {
+  //   icon: <Lock size={28} />,
+  //   title: "Security Testing",  
+  //   desc: "Automate security checks and vulnerability scans.",
+  //   points: ["1", "2"]
+  // },
+  // {
+  //   icon: <Eye size={28} />,
+  //   title: "Accessibility",
+  //   desc: "Run 508 compliance checks and reports.",
+  //   points: ["CI/CD ready", "Automated scans"]
+  // }
   }
 ];
 
