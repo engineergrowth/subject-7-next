@@ -6,7 +6,8 @@ import {
   GaugeCircle,
   AppWindow,
   Smartphone,
-  Eye
+  Eye,
+  Lock
 } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -47,6 +48,12 @@ const features = [
     title: "Mobile Testing",
     desc: "Test native & hybrid apps on iOS and Android.",
     points: ["Real devices & emulators", "No scripting"]
+  },
+  {
+    icon: <Lock size={28} />,
+    title: "Security Testing",  
+    desc: "Automate security checks and vulnerability scans.",
+    points: ["1", "2"]
   },
   {
     icon: <Eye size={28} />,
