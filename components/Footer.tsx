@@ -26,12 +26,6 @@ const Footer = () => {
               <p>Baltimore, MD 21202</p>
               <p>info@subject7.com</p>
             </div>
-            <div className="flex justify-center md:justify-start space-x-4 pt-2">
-              <Facebook className="text-gray-400 hover:text-white transition" size={20} />
-              <Linkedin className="text-gray-400 hover:text-white transition" size={20} />
-              <Twitter className="text-gray-400 hover:text-white transition" size={20} />
-              <Instagram className="text-gray-400 hover:text-white transition" size={20} />
-            </div>
           </div>
 
           {/* Main Links */}
