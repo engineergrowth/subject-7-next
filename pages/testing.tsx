@@ -13,134 +13,101 @@ import { Button } from "@/components/ui/button";
 
 const features = [
   {
-    icon: Globe,
+    icon: <Globe size={28} />,
     title: "Web Testing",
-    desc: "Create robust tests without writing code, using smart XPath and resilient locators.",
-    points: [
-      "True codeless test authoring",
-      "Smart XPath with Record & Play",
-      "Cross-browser ready",
-      "Built on Selenium without the complexity"
-    ]
+    desc: "Codeless Selenium-based tests with smart locators.",
+    points: ["Smart XPath", "Record & Play", "Cross-browser"]
   },
   {
-    icon: AppWindow,
-    title: "Desktop Testing",
-    desc: "Automate thick client and legacy desktop apps using image recognition and OCR.",
-    points: [
-      "Works with modern and legacy Windows apps",
-      "Image recognition & OCR powered by SikuliX",
-      "No-code automation for desktop environments"
-    ]
-  },
-  {
-    icon: Smartphone,
-    title: "Mobile Testing",
-    desc: "Test native and hybrid apps on emulators or real devices, at scale.",
-    points: [
-      "Supports Android & iOS emulators",
-      "Cloud-scale parallel execution",
-      "Real device compatibility",
-      "Powered by Appium without the hassle"
-    ]
-  },
-  {
-    icon: Network,
+    icon: <Network size={28} />,
     title: "API Testing",
-    desc: "Easily test REST and SOAP web services with variable creation and validation.",
-    points: [
-      "Test REST & SOAP endpoints",
-      "Validate JSON & XML responses",
-      "Use API calls to define dynamic test variables"
-    ]
+    desc: "Validate REST/SOAP services & chain with UI flows.",
+    points: ["Assertions", "Test variables", "JSON/XML"]
   },
   {
-    icon: Database,
+    icon: <Database size={28} />,
     title: "Database Testing",
-    desc: "Validate backend data or build data-driven tests using your existing databases.",
-    points: [
-      "Works with major SQL/NoSQL systems",
-      "Read, verify, or inject test data",
-      "Supports Excel-driven workflows"
-    ]
+    desc: "Automate backend DB checks and validations.",
+    points: ["Pre/post test queries", "No SQL needed"]
   },
   {
-    icon: GaugeCircle,
-    title: "Load Testing",
-    desc: "Scale test coverage from functional to thousands of virtual users — no extra tools.",
-    points: [
-      "Reuse functional tests for load scenarios",
-      "REST, headless, or real browser support",
-      "Scales to tens of thousands of virtual users",
-      "Built on JMeter without the overhead"
-    ]
+    icon: <GaugeCircle size={28} />,
+    title: "Performance Testing",
+    desc: "Stress test apps at scale with unified reporting.",
+    points: ["Cloud scalability", "Run 1000s of sessions"]
   },
   {
-    icon: Eye,
-    title: "Accessibility Testing",
-    desc: "Ensure compliance by reusing your existing functional tests for accessibility scans.",
-    points: [
-      "508 compliance checks baked in",
-      "Compare changes sprint-to-sprint",
-      "Advanced accessibility coming soon"
-    ]
+    icon: <AppWindow size={28} />,
+    title: "Desktop Testing",
+    desc: "Automate Windows legacy and modern desktop apps.",
+    points: ["No-code image recognition", "Legacy support"]
+  },
+  {
+    icon: <Smartphone size={28} />,
+    title: "Mobile Testing",
+    desc: "Test native & hybrid apps on iOS and Android.",
+    points: ["Real devices & emulators", "No scripting"]
+  },
+  {
+    icon: <Eye size={28} />,
+    title: "Accessibility",
+    desc: "Run 508 compliance checks and reports.",
+    points: ["CI/CD ready", "Automated scans"]
   }
 ];
 
 const Testing = () => (
-  <section className="bg-gray-950 text-white py-24 px-4 sm:px-6 lg:px-8">
-    <div className="max-w-6xl mx-auto text-center">
-      <h1 className="text-5xl sm:text-6xl font-extrabold bg-gradient-to-r from-white via-blue-100 to-purple-200 bg-clip-text text-transparent leading-tight mb-6">
-        Total Test Coverage.
-      </h1>
-      <p className="text-xl text-gray-400 max-w-3xl mx-auto">
-        Subject7 supports every layer of your QA strategy — from browser to backend and everything in between.
-      </p>
-    </div>
+  <section className="bg-gray-950 text-white py-20 px-4 sm:px-6 lg:px-8 mt-8 mb-16">
+    <div className="max-w-6xl mx-auto">
+      <div className="max-w-7xl mx-auto text-center">
+        <h1 className="text-4xl sm:text-6xl md:text-7xl font-extrabold bg-gradient-to-r from-white via-blue-100 to-purple-200 bg-clip-text text-transparent leading-snug tracking-tight sm:leading-[1.2] md:leading-[1.25] pb-2">
+          One Platform.<br />
+          Total Test Coverage.
+        </h1>
 
-    <div className="max-w-7xl mx-auto mt-24 space-y-16">
-      {features.map((f, i) => (
-        <div
-          key={i}
-          className={`flex flex-col-reverse md:flex-row items-center md:items-start gap-10 ${
-            i % 2 !== 0 ? "md:flex-row-reverse" : ""
-          }`}
-        >
-          {/* Icon & Title Block */}
-          <div className="flex-shrink-0 w-full md:w-1/3 flex flex-col items-center md:items-start text-center md:text-left">
-            <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-purple-600 to-indigo-600 flex items-center justify-center mb-4">
-              <f.icon className="text-white" size={28} />
+        <p className="text-xl md:text-2xl text-gray-300 mt-6 max-w-3xl mx-auto">
+          Subject7 empowers teams to automate web, desktop, mobile, API, and database testing — all in one unified interface.
+        </p>
+      </div>
+
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-16">
+        {features.map((f, i) => (
+          <div
+            key={i}
+            className="bg-gray-900 border border-gray-800 rounded-xl p-6 hover:bg-gray-800 transition group"
+          >
+            <div className="mb-4 flex items-center space-x-3">
+              <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-purple-600 to-indigo-600 flex items-center justify-center">
+                {React.cloneElement(f.icon, { className: "text-white", size: 24 })}
+              </div>
+              <h3 className="text-xl font-semibold">{f.title}</h3>
             </div>
-            <h3 className="text-2xl font-semibold mb-2">{f.title}</h3>
-            <p className="text-gray-400">{f.desc}</p>
-          </div>
-
-          {/* Bullet Points */}
-          <div className="w-full md:w-2/3 bg-gray-900/50 p-6 rounded-xl border border-gray-800 shadow-lg">
-            <ul className="text-sm text-gray-400 space-y-2 list-disc pl-6">
+            <p className="text-gray-400 mb-3">{f.desc}</p>
+            <ul className="text-sm text-gray-500 list-disc pl-5 space-y-1">
               {f.points.map((pt, j) => (
                 <li key={j}>{pt}</li>
               ))}
             </ul>
           </div>
-        </div>
-      ))}
-    </div>
+        ))}
+      </div>
 
-    <div className="text-center mt-28">
-      <Card className="bg-gray-900 border border-gray-700 p-10 max-w-3xl mx-auto shadow-xl">
-        <CardContent className="p-0">
-          <h3 className="text-2xl font-semibold text-white mb-6">
-            Want to see how it works together in real time?
-          </h3>
-          <Button
-            size="lg"
-            className="bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 text-white px-8 py-4 text-lg shadow-lg"
-          >
-            Book a Live Demo
-          </Button>
-        </CardContent>
-      </Card>
+      {/* CTA Block */}
+      <div className="text-center mt-20">
+        <Card className="bg-gray-800/50 border-gray-700 p-8 max-w-3xl mx-auto">
+          <CardContent className="p-0">
+            <h3 className="text-xl font-bold text-white mb-4">
+              Ready to see how this all works in action? We’ll walk you through it.
+            </h3>
+            <Button
+              size="lg"
+              className="bg-gradient-to-r from-[#5B21B6] to-[#7E22CE] hover:from-[#4C1D95] hover:to-[#6B21A8] text-white px-8 py-4 text-lg shadow-lg"
+            >
+              Book a Live Demo
+            </Button>
+          </CardContent>
+        </Card>
+      </div>
     </div>
   </section>
 );

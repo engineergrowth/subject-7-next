@@ -10,18 +10,14 @@ const Integrations = () => {
     { name: "Jenkins", icon: FaJenkins },
     { name: "GitLab", icon: FaGitlab },
     { name: "Slack", icon: FaSlack },
-    { name: "Bitbucket", icon: FaBitbucket },
-    { name: "Microsoft", icon: FaMicrosoft },
+    { name: "Azure", icon: FaMicrosoft },
   ];
 
   return (
     <section id="integrations" className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-900/50">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">Integrations</h2>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            Seamlessly integrate with your existing development workflow
-          </p>
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">Seamless Integrations.</h2>
         </div>
 
         <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-6 mb-16">

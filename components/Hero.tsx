@@ -5,7 +5,7 @@ const Hero = () => {
       <div className="max-w-7xl mx-auto text-center">
        <h1 className="text-4xl sm:text-6xl md:text-7xl font-extrabold bg-gradient-to-r from-white via-blue-100 to-purple-200 bg-clip-text text-transparent leading-snug tracking-tight sm:leading-[1.2] md:leading-[1.25] pb-2">
         Ditch Manual Testing.<br />
-        Supercharge Your Releases.
+        Supercharge Your Deployments.
       </h1>
 
 

@@ -6,7 +6,7 @@ const Highlights = () => {
       icon: MonitorPlay,
       title: "Unified Test Automation",
       description:
-        "Author, run, and manage tests across web, desktop, API, and database. One powerful platform, total coverage."
+        "Author, run, and manage tests across web, desktop, API, and DB. One powerful platform, total coverage."
     },
     {
       icon: Layers3,
@@ -18,7 +18,7 @@ const Highlights = () => {
       icon: Server,
       title: "CI/CD Ready",
       description:
-        "Connect seamlessly to GitHub, Jenkins, and other tools to fit right into your existing workflows."
+        "Connect seamlessly to GitHub, Azure, and other tools to fit right into your existing workflows."
     },
     {
       icon: ShieldCheck,
@@ -32,7 +32,7 @@ const Highlights = () => {
     <section className="py-24 px-6 sm:px-10 lg:px-20 bg-gray-900/50">
       <div className="max-w-7xl mx-auto text-center mb-16">
         <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-          Unified Test Automation, Redefined
+          Unified Test Automation, Redefined.
         </h2>
         <p className="text-lg text-gray-300 max-w-6xl mx-auto">
           Subject7 brings together everything your QA team needs. Codeless creation. Full test coverage. Seamless delivery.

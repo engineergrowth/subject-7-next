@@ -33,7 +33,7 @@ const Testimonials = () => {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">
-            Trusted by Government & Enterprise
+            Trusted by Government & Enterprise.
           </h2>
         </div>
 
@@ -79,7 +79,7 @@ const Testimonials = () => {
                   ))}
                 </div>
                 <blockquote className="text-lg text-gray-300 mb-6 leading-relaxed">
-                  "We piloted Subject7 and other tools. We had Selenium and UFT but we went with Subject7 because it was much more user-friendly. And with all the capabilities Subject7 offers, you can run load testing, 508 compliance, web service testing, UI test, and reuse pieces of the code in the same tool."
+                  "We went with Subject7 because it was much more user-friendly. And with all the capabilities Subject7 offers, you can run load testing, 508 compliance, web service testing, UI test, and reuse pieces of the code in the same tool."
                 </blockquote>
                 <cite className="text-gray-400">—Grantsolutions.gov</cite>
               </CardContent>
