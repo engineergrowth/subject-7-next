@@ -1,6 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { FaGithub, FaSlack, FaJenkins, FaGitlab, FaBitbucket, FaMicrosoft } from "react-icons/fa";
+import { FaGithub, FaSlack, FaJenkins, FaGitlab, FaXRay, FaMicrosoft } from "react-icons/fa";
 import { SiJira } from "react-icons/si";
 
 const Integrations = () => {
@@ -11,6 +11,7 @@ const Integrations = () => {
     { name: "GitLab", icon: FaGitlab },
     { name: "Slack", icon: FaSlack },
     { name: "Azure", icon: FaMicrosoft },
+    { name: "Xray", icon: FaXRay }
   ];
 
   return (
