@@ -20,7 +20,7 @@ const Integrations = () => {
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">Seamless Integrations.</h2>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-6 mb-16">
+        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-6 mb-16 items-center justify-items-center">
           {integrations.map((integration) => {
             const Icon = integration.icon;
             return (
