@@ -6,8 +6,8 @@ import {
   GaugeCircle,
   AppWindow,
   Smartphone,
-  Eye,
-  Lock
+  // Eye,
+  // Lock
 } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
