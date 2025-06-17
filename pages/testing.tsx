@@ -16,7 +16,7 @@ const features = [
   {
     icon: <Globe size={28} />,
     title: "Web Testing",
-    desc: "Web Testing: Every page. Every click. Flawless, every time.",
+    desc: "Every page. Every click. Flawless, every time.",
     points: ["Smart XPath", "Record & Play", "Cross-browser"]
   },
   {
