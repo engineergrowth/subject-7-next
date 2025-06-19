@@ -24,7 +24,7 @@ const Highlights = () => {
       icon: ShieldCheck,
       title: "Secure & Compliant",
       description:
-        "SOC 2 certified and 508 compliant — trusted by leading federal agencies and enterprises alike."
+        "Trusted by leading federal agencies and enterprises alike."
     }
   ];
 
