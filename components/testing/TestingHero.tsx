@@ -13,11 +13,7 @@ const TestingHero = () => {
       </div>
       
       <div className="relative max-w-7xl mx-auto text-center">
-        <div className="inline-flex items-center px-4 py-2 bg-gray-800/50 border border-gray-700 rounded-full text-sm font-medium mb-8">
-          <span className="w-2 h-2 bg-green-400 rounded-full mr-2"></span>
-          Trusted by Fortune 500 Companies
-        </div>
-        
+       
         <h1 className="text-5xl sm:text-7xl md:text-8xl font-extrabold bg-gradient-to-r from-white via-blue-100 to-purple-200 bg-clip-text text-transparent leading-[1.1] tracking-tight mb-8">
           Total Test<br />
           <span className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
