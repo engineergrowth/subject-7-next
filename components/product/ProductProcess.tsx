@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { ArrowRight, Play, BarChart3, Rocket, Settings } from "lucide-react";
+import { Play, BarChart3, Rocket, Settings } from "lucide-react";
 
 const steps = [
   {
@@ -48,110 +48,80 @@ const ProductProcess = () => {
           </p>
         </motion.div>
 
-        <div className="relative">
-          {/* Connection Lines */}
-          <motion.div 
-            initial={{ scaleX: 0 }}
-            whileInView={{ scaleX: 1 }}
-            transition={{ duration: 2, delay: 0.5 }}
-            viewport={{ once: true }}
-            className="hidden lg:block absolute top-1/2 left-0 w-full h-0.5 bg-gradient-to-r from-blue-600 via-purple-600 via-green-600 to-orange-600 opacity-30 origin-left"
-          />
-
-          <div className="grid lg:grid-cols-4 gap-8 items-stretch">
-            {steps.map((step, index) => (
-              <div key={index} className="relative h-full">
+        <div className="grid lg:grid-cols-4 gap-8 lg:gap-16 items-stretch">
+          {steps.map((step, index) => (
+            <div key={index} className="relative flex">
+              <motion.div 
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ 
+                  duration: 0.8, 
+                  delay: index * 0.2,
+                  ease: [0.25, 0.46, 0.45, 0.94]
+                }}
+                viewport={{ once: true, margin: "-100px" }}
+                className="flex-1 bg-gradient-to-br from-gray-800/50 to-gray-900/50 border border-gray-700 rounded-3xl p-8 text-center hover:border-purple-500/50 transition-all duration-500 group hover:transform hover:scale-105 flex flex-col"
+              >
                 <motion.div 
-                  initial={{ opacity: 0, y: 50 }}
-                  whileInView={{ opacity: 1, y: 0 }}
+                  initial={{ scale: 0, opacity: 0 }}
+                  whileInView={{ scale: 1, opacity: 1 }}
                   transition={{ 
-                    duration: 0.8, 
-                    delay: index * 0.2,
-                    ease: [0.25, 0.46, 0.45, 0.94]
+                    duration: 0.6, 
+                    delay: index * 0.2 + 0.3,
+                    type: "spring",
+                    stiffness: 150,
+                    damping: 15
                   }}
-                  viewport={{ once: true, margin: "-100px" }}
-                  className="h-full min-h-[400px] flex flex-col justify-between bg-gradient-to-br from-gray-800/50 to-gray-900/50 border border-gray-700 rounded-3xl p-8 text-center hover:border-purple-500/50 transition-all duration-500 group"
+                  viewport={{ once: true }}
+                  className={`w-20 h-20 mx-auto mb-6 rounded-2xl bg-gradient-to-br ${step.color} flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg`}
                 >
-                  <div>
-                    <motion.div 
-                      initial={{ scale: 0, opacity: 0 }}
-                      whileInView={{ scale: 1, opacity: 1 }}
-                      transition={{ 
-                        duration: 0.6, 
-                        delay: index * 0.2 + 0.3,
-                        type: "spring",
-                        stiffness: 150,
-                        damping: 15
-                      }}
-                      viewport={{ once: true }}
-                      className={`w-20 h-20 mx-auto mb-6 rounded-2xl bg-gradient-to-br ${step.color} flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg`}
-                    >
-                      {React.cloneElement(step.icon, { className: "text-white" })}
-                    </motion.div>
-
-                    <motion.div 
-                      initial={{ opacity: 0, y: 10 }}
-                      whileInView={{ opacity: 1, y: 0 }}
-                      transition={{ 
-                        duration: 0.6, 
-                        delay: index * 0.2 + 0.5,
-                        ease: [0.25, 0.46, 0.45, 0.94]
-                      }}
-                      viewport={{ once: true }}
-                      className="text-2xl font-bold bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent mb-2"
-                    >
-                      {String(index + 1).padStart(2, '0')}
-                    </motion.div>
-
-                    <motion.h3 
-                      initial={{ opacity: 0, y: 10 }}
-                      whileInView={{ opacity: 1, y: 0 }}
-                      transition={{ 
-                        duration: 0.6, 
-                        delay: index * 0.2 + 0.7,
-                        ease: [0.25, 0.46, 0.45, 0.94]
-                      }}
-                      viewport={{ once: true }}
-                      className="text-xl font-bold text-white mb-4"
-                    >
-                      {step.title}
-                    </motion.h3>
-                  </div>
-
-                  <motion.p 
-                    initial={{ opacity: 0, y: 10 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ 
-                      duration: 0.6, 
-                      delay: index * 0.2 + 0.9,
-                      ease: [0.25, 0.46, 0.45, 0.94]
-                    }}
-                    viewport={{ once: true }}
-                    className="text-gray-300 leading-relaxed"
-                  >
-                    {step.description}
-                  </motion.p>
+                  {React.cloneElement(step.icon, { className: "text-white" })}
                 </motion.div>
 
-                {index < steps.length - 1 && (
-                  <motion.div 
-                    initial={{ opacity: 0, scale: 0 }}
-                    whileInView={{ opacity: 1, scale: 1 }}
-                    transition={{ 
-                      duration: 0.4, 
-                      delay: index * 0.2 + 1.2,
-                      type: "spring",
-                      stiffness: 200
-                    }}
-                    viewport={{ once: true }}
-                    className="hidden lg:block absolute top-1/2 -right-4 transform -translate-y-1/2"
-                  >
-                    <ArrowRight className="h-6 w-6 text-purple-400" />
-                  </motion.div>
-                )}
-              </div>
-            ))}
-          </div>
+                <motion.div 
+                  initial={{ opacity: 0, y: 10 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ 
+                    duration: 0.6, 
+                    delay: index * 0.2 + 0.5,
+                    ease: [0.25, 0.46, 0.45, 0.94]
+                  }}
+                  viewport={{ once: true }}
+                  className="text-2xl font-bold bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent mb-2"
+                >
+                  {String(index + 1).padStart(2, '0')}
+                </motion.div>
+
+                <motion.h3 
+                  initial={{ opacity: 0, y: 10 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ 
+                    duration: 0.6, 
+                    delay: index * 0.2 + 0.7,
+                    ease: [0.25, 0.46, 0.45, 0.94]
+                  }}
+                  viewport={{ once: true }}
+                  className="text-xl font-bold text-white mb-6"
+                >
+                  {step.title}
+                </motion.h3>
+
+                <motion.p 
+                  initial={{ opacity: 0, y: 10 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ 
+                    duration: 0.6, 
+                    delay: index * 0.2 + 0.9,
+                    ease: [0.25, 0.46, 0.45, 0.94]
+                  }}
+                  viewport={{ once: true }}
+                  className="text-gray-300 leading-relaxed flex-1"
+                >
+                  {step.description}
+                </motion.p>
+              </motion.div>
+            </div>
+          ))}
         </div>
       </div>
     </section>

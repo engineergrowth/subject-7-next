@@ -14,42 +14,47 @@ const Navigation = () => {
   ];
 
   return (
-    <nav className="fixed top-0 w-full bg-gray-950 border-b border-gray-800 z-50 shadow-sm">
+    <nav className="fixed top-0 w-full bg-gray-950/95 backdrop-blur-md border-b border-gray-700/50 z-50 shadow-lg">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
+        <div className="flex justify-between items-center h-18">
           {/* Logo */}
           <div className="flex items-center space-x-3">
-            <Link href="/">
+            <Link href="/" className="transition-transform hover:scale-105 duration-300">
               <img src="/logo.png" alt="Subject7 Logo" className="h-10 w-auto" />
             </Link>
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-6">
-            {navItems.map((item, idx) => (
+          <div className="hidden md:flex items-center space-x-8">
+            {navItems.slice(0, -1).map((item, idx) => (
               <Link
                 key={idx}
                 href={item.href}
-                className={`text-base font-semibold px-3 py-2 transition ${
-                  item.name === "Book Demo"
-                    ? "bg-gradient-to-r from-purple-600 to-indigo-600 text-white rounded-lg shadow hover:from-purple-700 hover:to-indigo-700"
-                    : "text-gray-100 hover:text-purple-600"
-                }`}
+                className="text-base font-medium text-gray-100 hover:text-purple-400 transition-colors duration-300 relative group"
               >
                 {item.name}
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-purple-400 to-blue-400 group-hover:w-full transition-all duration-300"></span>
               </Link>
             ))}
+            
+            {/* Book Demo Button */}
+            <Link
+              href="/contact"
+              className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white px-6 py-2.5 rounded-xl font-semibold text-base shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
+            >
+              Book Demo
+            </Link>
           </div>
 
-          {/* Login Button */}
-          <div className="px-3 pt-1">
+          {/* Customer Login */}
+          <div className="hidden md:block">
             <a
               href="https://platform.subject7.com/"
-              className="text-sm text-purple-600 hover:text-purple-100 transition"
+              className="text-base font-medium text-gray-300 hover:text-purple-400 transition-colors duration-300 border-l border-gray-700 pl-6"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Customer Login
+              Customer Login →
             </a>
           </div>
 
@@ -66,29 +71,38 @@ const Navigation = () => {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="md:hidden border-t border-gray-800 pt-4 pb-6 bg-[#0c0c12] space-y-3">
-            {navItems.map((item, idx) => (
+          <div className="md:hidden border-t border-gray-700/50 pt-6 pb-6 bg-gray-950/95 backdrop-blur-md space-y-4">
+            {navItems.slice(0, -1).map((item, idx) => (
               <Link
                 key={idx}
                 href={item.href}
                 onClick={() => setIsMenuOpen(false)}
-                className={`block text-base font-semibold px-4 py-2 rounded transition ${
-                  item.name === "Book Demo"
-                    ? "bg-gradient-to-r from-purple-600 to-indigo-600 text-white shadow hover:from-purple-700 hover:to-indigo-700"
-                    : "text-white hover:text-purple-400"
-                }`}
+                className="block text-base font-medium text-gray-100 hover:text-purple-400 px-4 py-2 transition-colors duration-300"
               >
                 {item.name}
               </Link>
             ))}
-            <a
-              href="https://platform.subject7.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="block text-purple-600 text-sm px-4 py-2 hover:text-purple-100 transition"
+            
+            {/* Mobile Book Demo Button */}
+            <Link
+              href="/contact"
+              onClick={() => setIsMenuOpen(false)}
+              className="block bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white px-4 py-3 rounded-xl font-semibold text-base shadow-lg mx-4 text-center transition-all duration-300"
             >
-              Customer Login
-            </a>
+              Book Demo
+            </Link>
+            
+            {/* Mobile Customer Login */}
+            <div className="border-t border-gray-700/50 pt-4 mt-4">
+              <a
+                href="https://platform.subject7.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block text-base font-medium text-gray-300 hover:text-purple-400 px-4 py-2 transition-colors duration-300"
+              >
+                Customer Login →
+              </a>
+            </div>
           </div>
         )}
       </div>

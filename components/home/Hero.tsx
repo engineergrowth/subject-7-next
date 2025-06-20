@@ -19,11 +19,9 @@ const Hero = () => {
           transition={{ duration: 0.8, delay: 0.1, ease: [0.25, 0.46, 0.45, 0.94] }}
           className="text-5xl sm:text-7xl md:text-8xl font-extrabold bg-gradient-to-r from-white via-blue-100 to-purple-200 bg-clip-text text-transparent leading-[1.1] tracking-tight mb-8"
         >
-          <span className="inline-block">Ditch Manual</span>{" "}
-          <span className="bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent inline-block">Testing</span>
+          <span className="inline-block">Ditch Manual Testing</span>
           <br />
-          <span className="inline-block">Supercharge Your</span>{" "}
-          <span className="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent inline-block">Deployments</span>
+          <span className="bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent inline-block">Supercharge Your Deployments</span>
         </motion.h1>
 
         <motion.p 
@@ -42,7 +40,7 @@ const Hero = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.5, ease: [0.25, 0.46, 0.45, 0.94] }}
-          className="flex flex-col sm:flex-row justify-center gap-6"
+          className="flex justify-center"
         >
           <motion.div
             whileHover={{ scale: 1.05 }}
@@ -50,21 +48,11 @@ const Hero = () => {
           >
             <Link
               href="/demo"
-              className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white py-4 px-8 rounded-xl font-semibold text-lg shadow-lg hover:shadow-xl transition-all duration-300 flex items-center gap-3 group"
+              className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white py-4 px-10 rounded-xl font-semibold text-lg shadow-lg hover:shadow-xl transition-all duration-300 flex items-center gap-3 group"
             >
-              Get Started Free
+              Book a Demo
               <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform duration-300" />
             </Link>
-          </motion.div>
-          
-          <motion.div
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-          >
-            <button className="bg-gray-800/50 border border-gray-600 hover:border-purple-500 text-white py-4 px-8 rounded-xl font-semibold text-lg shadow-lg hover:shadow-xl transition-all duration-300 flex items-center gap-3 group">
-              <Play className="h-5 w-5 group-hover:scale-110 transition-transform duration-300" />
-              Watch Demo
-            </button>
           </motion.div>
         </motion.div>
       </div>

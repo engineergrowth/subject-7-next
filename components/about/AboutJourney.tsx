@@ -95,9 +95,7 @@ const AboutJourney = () => {
                   </p>
                 </motion.div>
 
-                {/* Decorative elements */}
-                <div className="absolute top-4 right-4 w-2 h-2 bg-purple-400 rounded-full opacity-50" />
-                <div className="absolute bottom-4 left-4 w-1 h-1 bg-blue-400 rounded-full opacity-50" />
+
               </div>
             </motion.div>
           ))}

@@ -1,23 +1,21 @@
 
 import React from "react";
-import TestingHero from "@/components/product/ProductHero";
-import TestingCapabilities from "@/components/product/ProductCapabilities";
-import TestingShowcase from "@/components/product/ProductShowcase";
-import TestingStats from "@/components/product/ProductStats";
-import TestingProcess from "@/components/product/ProductProcess";
+import ProductHero from "@/components/product/ProductHero";
+import ProductCapabilities from "@/components/product/ProductCapabilities";
+import ProductShowcase from "@/components/product/ProductShowcase";
+import ProductStats from "@/components/product/ProductStats";
+import ProductProcess from "@/components/product/ProductProcess";
 import ProductCTA from "@/components/product/ProductCTA";
 
-const Testing = () => (
+const Product = () => (
   <div className="bg-gray-950 text-white">
-    <TestingHero />
-    <TestingStats />
-    <TestingCapabilities />
-    <TestingShowcase />
-    <TestingProcess />
+    <ProductHero />
+    <ProductStats />
+    <ProductCapabilities />
+    <ProductShowcase />
+    <ProductProcess />
     <ProductCTA />
   </div>
 );
 
-export default Testing;
-
-//
+export default Product;
