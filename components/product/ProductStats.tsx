@@ -1,5 +1,6 @@
 
 import React from "react";
+import { motion } from "framer-motion";
 import { TrendingUp, Users, Clock, Shield } from "lucide-react";
 
 const stats = [
@@ -31,31 +32,93 @@ const stats = [
 
 const ProductStats = () => {
   return (
-    <section className="bg-gray-900 py-20 px-4 sm:px-6 lg:px-8">
+    <section className="bg-gray-900/30 py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-white mb-4">
+        <motion.div 
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: [0.25, 0.46, 0.45, 0.94] }}
+          viewport={{ once: true, margin: "-100px" }}
+          className="text-center mb-16"
+        >
+          <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-white via-blue-100 to-purple-200 bg-clip-text text-transparent mb-6">
             Proven Results Across Industries
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
             From government agencies to Fortune 500 companies, organizations trust Subject7 
             to deliver comprehensive test automation at scale.
           </p>
-        </div>
+        </motion.div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {stats.map((stat, index) => (
-            <div
+            <motion.div
               key={index}
-              className="bg-gray-800/50 border border-gray-700 rounded-2xl p-8 text-center hover:bg-gray-800 transition-all duration-300 group"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ 
+                duration: 0.8, 
+                delay: index * 0.1,
+                ease: [0.25, 0.46, 0.45, 0.94]
+              }}
+              viewport={{ once: true, margin: "-100px" }}
+              className="bg-gradient-to-br from-gray-800/50 to-gray-900/50 border border-gray-700 rounded-2xl p-8 text-center hover:border-purple-500/50 transition-all duration-300 group"
             >
-              <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-purple-600 to-blue-600 rounded-xl mb-6 group-hover:scale-110 transition-transform">
+              <motion.div 
+                initial={{ scale: 0, opacity: 0 }}
+                whileInView={{ scale: 1, opacity: 1 }}
+                transition={{ 
+                  duration: 0.6, 
+                  delay: index * 0.1 + 0.3,
+                  type: "spring",
+                  stiffness: 150,
+                  damping: 15
+                }}
+                viewport={{ once: true }}
+                className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-purple-600 to-blue-600 rounded-xl mb-6 group-hover:scale-110 transition-transform shadow-lg shadow-purple-500/25"
+              >
                 {React.cloneElement(stat.icon, { className: "h-8 w-8 text-white" })}
-              </div>
-              <div className="text-4xl font-bold text-white mb-2">{stat.value}</div>
-              <div className="text-lg font-semibold text-purple-400 mb-3">{stat.label}</div>
-              <p className="text-gray-400 text-sm leading-relaxed">{stat.description}</p>
-            </div>
+              </motion.div>
+              <motion.div 
+                initial={{ opacity: 0, y: 10 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ 
+                  duration: 0.6, 
+                  delay: index * 0.1 + 0.5,
+                  ease: [0.25, 0.46, 0.45, 0.94]
+                }}
+                viewport={{ once: true }}
+                className="text-4xl font-bold bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent mb-2"
+              >
+                {stat.value}
+              </motion.div>
+              <motion.div 
+                initial={{ opacity: 0, y: 10 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ 
+                  duration: 0.6, 
+                  delay: index * 0.1 + 0.7,
+                  ease: [0.25, 0.46, 0.45, 0.94]
+                }}
+                viewport={{ once: true }}
+                className="text-lg font-semibold text-purple-400 mb-3"
+              >
+                {stat.label}
+              </motion.div>
+              <motion.p 
+                initial={{ opacity: 0, y: 10 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ 
+                  duration: 0.6, 
+                  delay: index * 0.1 + 0.9,
+                  ease: [0.25, 0.46, 0.45, 0.94]
+                }}
+                viewport={{ once: true }}
+                className="text-gray-300 text-sm leading-relaxed"
+              >
+                {stat.description}
+              </motion.p>
+            </motion.div>
           ))}
         </div>
       </div>

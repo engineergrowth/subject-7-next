@@ -1,5 +1,6 @@
 
 import React from "react";
+import { motion } from "framer-motion";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Code, Zap, Users, Settings } from "lucide-react";
@@ -30,60 +31,138 @@ const showcaseItems = [
 
 const ProductShowcase = () => {
   return (
-    <section className="bg-gray-900 py-24 px-4 sm:px-6 lg:px-8">
+    <section className="bg-gray-900/30 py-24 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-20">
-          <h2 className="text-5xl font-bold text-white mb-6">
+        <motion.div 
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: [0.25, 0.46, 0.45, 0.94] }}
+          viewport={{ once: true, margin: "-100px" }}
+          className="text-center mb-20"
+        >
+          <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-white via-blue-100 to-purple-200 bg-clip-text text-transparent mb-6">
             See Subject7 in Action
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
             Experience the power of unified test automation through our intuitive interface
           </p>
-        </div>
+        </motion.div>
 
         <div className="space-y-16">
           {showcaseItems.map((item, index) => (
-            <div
+            <motion.div
               key={index}
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ 
+                duration: 0.8, 
+                delay: index * 0.2,
+                ease: [0.25, 0.46, 0.45, 0.94]
+              }}
+              viewport={{ once: true, margin: "-100px" }}
               className={`flex flex-col ${
                 index % 2 === 0 ? "lg:flex-row" : "lg:flex-row-reverse"
               } items-center gap-12`}
             >
               <div className="flex-1 space-y-6">
-                <div className="inline-flex items-center space-x-3 p-3">
-                  <div className="w-12 h-12 bg-gradient-to-br from-purple-600 to-blue-600 rounded-xl flex items-center justify-center">
+                <motion.div 
+                  initial={{ opacity: 0, x: index % 2 === 0 ? -20 : 20 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ 
+                    duration: 0.6, 
+                    delay: index * 0.2 + 0.3,
+                    ease: [0.25, 0.46, 0.45, 0.94]
+                  }}
+                  viewport={{ once: true }}
+                  className="inline-flex items-center space-x-3 p-3"
+                >
+                  <motion.div 
+                    initial={{ scale: 0, opacity: 0 }}
+                    whileInView={{ scale: 1, opacity: 1 }}
+                    transition={{ 
+                      duration: 0.6, 
+                      delay: index * 0.2 + 0.5,
+                      type: "spring",
+                      stiffness: 150,
+                      damping: 15
+                    }}
+                    viewport={{ once: true }}
+                    className="w-12 h-12 bg-gradient-to-br from-purple-600 to-blue-600 rounded-xl flex items-center justify-center shadow-lg shadow-purple-500/25"
+                  >
                     {React.cloneElement(item.icon, { className: "text-white" })}
-                  </div>
+                  </motion.div>
                   <h3 className="text-2xl font-bold text-white">{item.title}</h3>
-                </div>
+                </motion.div>
                 
-                <p className="text-xl text-gray-300 leading-relaxed">
+                <motion.p 
+                  initial={{ opacity: 0, y: 10 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ 
+                    duration: 0.6, 
+                    delay: index * 0.2 + 0.7,
+                    ease: [0.25, 0.46, 0.45, 0.94]
+                  }}
+                  viewport={{ once: true }}
+                  className="text-xl text-gray-300 leading-relaxed"
+                >
                   {item.description}
-                </p>
+                </motion.p>
                 
-                <div className="flex flex-wrap gap-2">
+                <motion.div 
+                  initial={{ opacity: 0, y: 10 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ 
+                    duration: 0.6, 
+                    delay: index * 0.2 + 0.9,
+                    ease: [0.25, 0.46, 0.45, 0.94]
+                  }}
+                  viewport={{ once: true }}
+                  className="flex flex-wrap gap-2"
+                >
                   {item.badges.map((badge, badgeIndex) => (
-                    <Badge
+                    <motion.div
                       key={badgeIndex}
-                      variant="outline"
-                      className="border-purple-500/50 text-purple-300 bg-purple-500/10"
+                      initial={{ opacity: 0, scale: 0 }}
+                      whileInView={{ opacity: 1, scale: 1 }}
+                      transition={{ 
+                        duration: 0.4, 
+                        delay: index * 0.2 + 1.1 + (badgeIndex * 0.1),
+                        type: "spring",
+                        stiffness: 200
+                      }}
+                      viewport={{ once: true }}
                     >
-                      {badge}
-                    </Badge>
+                      <Badge
+                        variant="outline"
+                        className="border-purple-500/50 text-purple-300 bg-purple-500/10"
+                      >
+                        {badge}
+                      </Badge>
+                    </motion.div>
                   ))}
-                </div>
+                </motion.div>
               </div>
               
-              <div className="flex-1">
-                <Card className="bg-gray-800/50 border-gray-700 p-2 overflow-hidden">
+              <motion.div 
+                initial={{ opacity: 0, x: index % 2 === 0 ? 20 : -20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ 
+                  duration: 0.8, 
+                  delay: index * 0.2 + 0.4,
+                  ease: [0.25, 0.46, 0.45, 0.94]
+                }}
+                viewport={{ once: true }}
+                className="flex-1"
+              >
+                <Card className="bg-gradient-to-br from-gray-800/50 to-gray-900/50 border-gray-700 p-2 overflow-hidden hover:border-purple-500/50 transition-all duration-300">
                   <img
                     src={item.image}
                     alt={item.title}
                     className="w-full h-80 object-cover rounded-lg"
                   />
                 </Card>
-              </div>
-            </div>
+              </motion.div>
+            </motion.div>
           ))}
         </div>
       </div>

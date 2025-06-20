@@ -1,5 +1,6 @@
 
 import React from "react";
+import { motion } from "framer-motion";
 import {
   Globe,
   Network,
@@ -92,46 +93,107 @@ const capabilities = [
   }
 ];
 
-const TestingCapabilities = () => {
+const ProductCapabilities = () => {
   return (
     <section className="bg-gray-950 py-24 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-20">
-          <h2 className="text-5xl font-bold text-white mb-6">
+        <motion.div 
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: [0.25, 0.46, 0.45, 0.94] }}
+          viewport={{ once: true, margin: "-100px" }}
+          className="text-center mb-20"
+        >
+          <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-white via-blue-100 to-purple-200 bg-clip-text text-transparent mb-6">
             Complete Testing Coverage
           </h2>
           <p className="text-xl text-gray-300 max-w-4xl mx-auto leading-relaxed">
             Subject7 provides comprehensive automation across every layer of your application stack, 
             from frontend interfaces to backend databases, ensuring complete quality coverage.
           </p>
-        </div>
+        </motion.div>
 
         <div className="grid lg:grid-cols-2 gap-12">
           {capabilities.map((capability, index) => (
-            <div
+            <motion.div
               key={index}
-              className="bg-gray-900/50 border border-gray-800 rounded-3xl p-8 hover:bg-gray-900 transition-all duration-500 group"
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ 
+                duration: 0.8, 
+                delay: index * 0.2,
+                ease: [0.25, 0.46, 0.45, 0.94]
+              }}
+              viewport={{ once: true, margin: "-100px" }}
+              className="bg-gradient-to-br from-gray-800/50 to-gray-900/50 border border-gray-700 rounded-3xl p-8 hover:border-purple-500/50 transition-all duration-500 group"
             >
               <div className="flex items-start space-x-6">
-                <div className={`w-20 h-20 rounded-2xl bg-gradient-to-br ${capability.color} flex items-center justify-center group-hover:scale-110 transition-transform duration-300`}>
+                <motion.div 
+                  initial={{ scale: 0, opacity: 0 }}
+                  whileInView={{ scale: 1, opacity: 1 }}
+                  transition={{ 
+                    duration: 0.6, 
+                    delay: index * 0.2 + 0.3,
+                    type: "spring",
+                    stiffness: 150,
+                    damping: 15
+                  }}
+                  viewport={{ once: true }}
+                  className={`w-20 h-20 rounded-2xl bg-gradient-to-br ${capability.color} flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg`}
+                >
                   {React.cloneElement(capability.icon, { className: "text-white" })}
-                </div>
+                </motion.div>
                 
                 <div className="flex-1">
-                  <h3 className="text-2xl font-bold text-white mb-3">{capability.title}</h3>
-                  <p className="text-gray-300 mb-6 leading-relaxed">{capability.description}</p>
+                  <motion.h3 
+                    initial={{ opacity: 0, y: 10 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ 
+                      duration: 0.6, 
+                      delay: index * 0.2 + 0.5,
+                      ease: [0.25, 0.46, 0.45, 0.94]
+                    }}
+                    viewport={{ once: true }}
+                    className="text-2xl font-bold text-white mb-3"
+                  >
+                    {capability.title}
+                  </motion.h3>
+                  <motion.p 
+                    initial={{ opacity: 0, y: 10 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ 
+                      duration: 0.6, 
+                      delay: index * 0.2 + 0.7,
+                      ease: [0.25, 0.46, 0.45, 0.94]
+                    }}
+                    viewport={{ once: true }}
+                    className="text-gray-300 mb-6 leading-relaxed"
+                  >
+                    {capability.description}
+                  </motion.p>
                   
                   <div className="space-y-3">
                     {capability.features.map((feature, featureIndex) => (
-                      <div key={featureIndex} className="flex items-center space-x-3">
+                      <motion.div 
+                        key={featureIndex} 
+                        initial={{ opacity: 0, x: -10 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        transition={{ 
+                          duration: 0.4, 
+                          delay: index * 0.2 + 0.9 + (featureIndex * 0.1),
+                          ease: [0.25, 0.46, 0.45, 0.94]
+                        }}
+                        viewport={{ once: true }}
+                        className="flex items-center space-x-3"
+                      >
                         <CheckCircle className="h-5 w-5 text-green-400 flex-shrink-0" />
                         <span className="text-gray-300">{feature}</span>
-                      </div>
+                      </motion.div>
                     ))}
                   </div>
                 </div>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>
@@ -139,4 +201,4 @@ const TestingCapabilities = () => {
   );
 };
 
-export default TestingCapabilities;
+export default ProductCapabilities;
