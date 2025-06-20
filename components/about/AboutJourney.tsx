@@ -74,7 +74,6 @@ const AboutJourney = () => {
                   <div className="w-16 h-16 bg-gradient-to-br from-purple-600 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg shadow-purple-500/25">
                     <span className="text-white font-bold text-lg">{milestone.year}</span>
                   </div>
-                  <div className="absolute -top-2 -right-2 w-6 h-6 bg-gradient-to-r from-purple-400 to-blue-400 rounded-full opacity-75 animate-pulse" />
                 </motion.div>
 
                 {/* Content */}
