@@ -29,7 +29,7 @@ const stats = [
   }
 ];
 
-const TestingStats = () => {
+const ProductStats = () => {
   return (
     <section className="bg-gray-900 py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
@@ -63,4 +63,4 @@ const TestingStats = () => {
   );
 };
 
-export default TestingStats;
+export default ProductStats;

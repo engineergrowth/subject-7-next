@@ -6,9 +6,9 @@ import { Users, Target, Trophy, Zap, Building, Globe, Shield, Award } from "luci
 
 const About = () => {
   const stats = [
-    { value: "2018", label: "Founded" },
+    { value: "2011", label: "Founded" },
     { value: "10M+", label: "Test Runs" },
-    { value: "500+", label: "Enterprise Clients" },
+    { value: "95%", label: "Customer Satisfaction"},
     { value: "99.9%", label: "Uptime" }
   ];
 
@@ -37,7 +37,7 @@ const About = () => {
 
   const milestones = [
     {
-      year: "2018",
+      year: "2011",
       title: "The Beginning",
       description: "Founded by senior engineers in Maryland who were frustrated with existing testing tools that were slow, brittle, and overly complex."
     },
@@ -49,12 +49,12 @@ const About = () => {
     {
       year: "2022",
       title: "Enterprise Scale",
-      description: "Reached 50M+ test runs annually, supporting some of the world's most demanding testing environments across Fortune 500 companies."
+      description: "Reached 10M+ test runs annually, supporting some of the world's most demanding testing environments across Fortune 500 companies."
     },
     {
       year: "2024",
       title: "Global Impact",
-      description: "Now trusted by 500+ enterprise clients worldwide, from government agencies to global corporations, powering mission-critical applications."
+      description: "Now trusted by enterprise clients worldwide, from government agencies to global corporations, powering mission-critical applications."
     }
   ];
 
@@ -66,11 +66,24 @@ const About = () => {
           <motion.h1 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
+            transition={{ duration: 0.8, ease: [0.25, 0.46, 0.45, 0.94] }}
             className="text-5xl sm:text-6xl md:text-7xl font-extrabold bg-gradient-to-r from-white via-blue-100 to-purple-200 bg-clip-text text-transparent leading-tight mb-8"
           >
-            Built by Testers.<br />
-            Trusted by the Enterprise.
+            <motion.span
+              initial={{ opacity: 0, x: -20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+            >
+              Built by Testers.
+            </motion.span>
+            <br />
+            <motion.span
+              initial={{ opacity: 0, x: 20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8, delay: 0.4 }}
+            >
+              Trusted by the Enterprise.
+            </motion.span>
           </motion.h1>
           
           <motion.p 
@@ -119,37 +132,90 @@ const About = () => {
             </p>
           </div>
 
-          <div className="space-y-16">
+          {/* Timeline Grid */}
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {milestones.map((milestone, index) => (
               <motion.div
                 key={index}
-                initial={{ opacity: 0, x: index % 2 === 0 ? -50 : 50 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.6 }}
-                viewport={{ once: true }}
-                className={`flex flex-col lg:flex-row items-center gap-12 ${
-                  index % 2 === 1 ? 'lg:flex-row-reverse' : ''
-                }`}
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ 
+                  duration: 0.8, 
+                  delay: index * 0.2,
+                  ease: [0.25, 0.46, 0.45, 0.94]
+                }}
+                viewport={{ once: true, margin: "-100px" }}
+                className="relative group"
               >
-                <div className="lg:w-1/2">
-                  <div className="bg-gradient-to-r from-purple-600 to-blue-600 text-white px-6 py-3 rounded-full text-lg font-semibold inline-block mb-6">
-                    {milestone.year}
-                  </div>
-                  <h3 className="text-3xl font-bold mb-4">{milestone.title}</h3>
-                  <p className="text-gray-300 text-lg leading-relaxed">
-                    {milestone.description}
-                  </p>
-                </div>
-                <div className="lg:w-1/2">
-                  <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl p-12 border border-gray-700">
-                    <div className="w-20 h-20 bg-gradient-to-r from-purple-600 to-blue-600 rounded-full mx-auto flex items-center justify-center">
-                      <Trophy className="text-white" size={32} />
+                {/* Timeline connector line */}
+                {index < milestones.length - 1 && (
+                  <div className="hidden lg:block absolute top-16 left-full w-8 h-0.5 bg-gradient-to-r from-purple-600 to-transparent z-10" />
+                )}
+                
+                <div className="bg-gradient-to-br from-gray-800/80 to-gray-900/80 backdrop-blur-sm p-8 rounded-2xl border border-gray-700 hover:border-purple-500/50 transition-all duration-500 group-hover:transform group-hover:scale-105 h-full">
+                  {/* Year Badge */}
+                  <motion.div 
+                    initial={{ scale: 0 }}
+                    whileInView={{ scale: 1 }}
+                    transition={{ 
+                      duration: 0.5, 
+                      delay: index * 0.2 + 0.3,
+                      type: "spring",
+                      stiffness: 200
+                    }}
+                    viewport={{ once: true }}
+                    className="relative mb-6"
+                  >
+                    <div className="w-16 h-16 bg-gradient-to-br from-purple-600 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg shadow-purple-500/25">
+                      <span className="text-white font-bold text-lg">{milestone.year}</span>
                     </div>
-                  </div>
+                    <div className="absolute -top-2 -right-2 w-6 h-6 bg-gradient-to-r from-purple-400 to-blue-400 rounded-full opacity-75 animate-pulse" />
+                  </motion.div>
+
+                  {/* Content */}
+                  <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ 
+                      duration: 0.6, 
+                      delay: index * 0.2 + 0.5 
+                    }}
+                    viewport={{ once: true }}
+                  >
+                    <h3 className="text-xl font-bold mb-4 text-center group-hover:text-purple-300 transition-colors duration-300">
+                      {milestone.title}
+                    </h3>
+                    <p className="text-gray-300 text-sm leading-relaxed text-center">
+                      {milestone.description}
+                    </p>
+                  </motion.div>
+
+                  {/* Decorative elements */}
+                  <div className="absolute top-4 right-4 w-2 h-2 bg-purple-400 rounded-full opacity-50" />
+                  <div className="absolute bottom-4 left-4 w-1 h-1 bg-blue-400 rounded-full opacity-50" />
                 </div>
               </motion.div>
             ))}
           </div>
+
+          {/* Progress indicator */}
+          <motion.div 
+            initial={{ scaleX: 0 }}
+            whileInView={{ scaleX: 1 }}
+            transition={{ duration: 2, delay: 0.5 }}
+            viewport={{ once: true }}
+            className="mt-16 h-1 bg-gradient-to-r from-purple-600 via-blue-600 to-purple-600 rounded-full mx-auto max-w-2xl origin-left"
+          />
+          
+          <motion.p 
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.8, delay: 1 }}
+            viewport={{ once: true }}
+            className="text-center text-gray-400 mt-8 text-lg"
+          >
+            14+ years of innovation and counting...
+          </motion.p>
         </div>
       </section>
 
@@ -169,19 +235,54 @@ const About = () => {
             {values.map((value, index) => (
               <motion.div
                 key={index}
-                initial={{ opacity: 0, y: 20 }}
+                initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
-                viewport={{ once: true }}
+                transition={{ 
+                  duration: 0.8, 
+                  delay: index * 0.2,
+                  ease: [0.25, 0.46, 0.45, 0.94]
+                }}
+                viewport={{ once: true, margin: "-100px" }}
                 className="bg-gradient-to-br from-gray-800/50 to-gray-900/50 p-8 rounded-2xl border border-gray-700 hover:border-purple-500/50 transition-all duration-300"
               >
-                <div className="w-16 h-16 rounded-xl bg-gradient-to-br from-purple-600 to-indigo-600 flex items-center justify-center mb-6">
+                <motion.div 
+                  initial={{ scale: 0, opacity: 0 }}
+                  animate={{ scale: 1, opacity: 1 }}
+                  transition={{ 
+                    duration: 0.6, 
+                    delay: index * 0.2 + 0.3,
+                    type: "spring",
+                    stiffness: 150,
+                    damping: 15
+                  }}
+                  className="w-16 h-16 rounded-xl bg-gradient-to-br from-purple-600 to-indigo-600 flex items-center justify-center mb-6"
+                >
                   <value.icon className="text-white" size={28} />
-                </div>
-                <h3 className="text-2xl font-semibold mb-4">{value.title}</h3>
-                <p className="text-gray-300 leading-relaxed">
+                </motion.div>
+                <motion.h3 
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ 
+                    duration: 0.6, 
+                    delay: index * 0.2 + 0.5,
+                    ease: [0.25, 0.46, 0.45, 0.94]
+                  }}
+                  className="text-2xl font-semibold mb-4"
+                >
+                  {value.title}
+                </motion.h3>
+                <motion.p 
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ 
+                    duration: 0.6, 
+                    delay: index * 0.2 + 0.7,
+                    ease: [0.25, 0.46, 0.45, 0.94]
+                  }}
+                  className="text-gray-300 leading-relaxed"
+                >
                   {value.description}
-                </p>
+                </motion.p>
               </motion.div>
             ))}
           </div>
@@ -236,7 +337,7 @@ const About = () => {
               </div>
               <div className="flex items-center gap-4 text-gray-400">
                 <Building size={20} />
-                <span>Leading 50+ engineers across 3 continents</span>
+                <span>Leading 30+ engineers across 3 continents</span>
               </div>
             </motion.div>
           </div>
@@ -248,7 +349,7 @@ const About = () => {
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl font-bold mb-6">Ready to Transform Your Testing?</h2>
           <p className="text-xl text-gray-300 mb-8">
-            Join thousands of teams who trust Subject7 to power their test automation
+            Take the first step in joining teams who trust Subject7 to power their test automation.
           </p>
           <button className="bg-gradient-to-r from-purple-600 to-blue-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:from-purple-700 hover:to-blue-700 transition-all duration-300 shadow-lg hover:shadow-xl">
             Schedule a Demo

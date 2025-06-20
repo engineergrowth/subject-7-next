@@ -1,7 +1,7 @@
-import Hero from "../components/Hero";
-import Highlights from "../components/Highlights";
-import Testimonials from "../components/Testimonials";
-import Integrations from "../components/Integrations";
+import Hero from "../components/home/Hero";
+import Highlights from "../components/home/Highlights";
+import Testimonials from "../components/home/Testimonials";
+import Integrations from "../components/home/Integrations";
 
 const Index = () => {
   return (

@@ -28,7 +28,7 @@ const showcaseItems = [
   }
 ];
 
-const TestingShowcase = () => {
+const ProductShowcase = () => {
   return (
     <section className="bg-gray-900 py-24 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
@@ -50,7 +50,7 @@ const TestingShowcase = () => {
               } items-center gap-12`}
             >
               <div className="flex-1 space-y-6">
-                <div className="inline-flex items-center space-x-3 p-3 bg-gray-800/50 rounded-2xl">
+                <div className="inline-flex items-center space-x-3 p-3">
                   <div className="w-12 h-12 bg-gradient-to-br from-purple-600 to-blue-600 rounded-xl flex items-center justify-center">
                     {React.cloneElement(item.icon, { className: "text-white" })}
                   </div>
@@ -91,4 +91,4 @@ const TestingShowcase = () => {
   );
 };
 
-export default TestingShowcase;
+export default ProductShowcase;
