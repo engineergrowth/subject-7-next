@@ -26,9 +26,7 @@ const AboutLeadership = () => {
                 alt="CEO"
                 className="w-64 h-64 rounded-2xl object-cover border-4 border-gradient-to-r from-purple-600 to-blue-600"
               />
-              <div className="absolute -bottom-4 -right-4 w-16 h-16 bg-gradient-to-r from-purple-600 to-blue-600 rounded-full flex items-center justify-center">
-                <Award className="text-white" size={24} />
-              </div>
+            
             </div>
           </motion.div>
           
