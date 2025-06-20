@@ -20,7 +20,7 @@ const Hero = () => {
           className="text-5xl sm:text-7xl md:text-8xl font-extrabold bg-gradient-to-r from-white via-blue-100 to-purple-200 bg-clip-text text-transparent leading-[1.1] tracking-tight mb-8"
         >
           <span className="inline-block">Ditch Manual</span>{" "}
-          <span className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent inline-block">Testing</span>
+          <span className="bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent inline-block">Testing</span>
           <br />
           <span className="inline-block">Supercharge Your</span>{" "}
           <span className="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent inline-block">Deployments</span>

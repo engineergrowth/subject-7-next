@@ -39,22 +39,26 @@ const Testimonials = () => {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.2, ease: [0.25, 0.46, 0.45, 0.94] }}
             viewport={{ once: true, margin: "-100px" }}
-            className="w-full lg:w-1/2 h-[440px] overflow-hidden relative"
+            className="w-full lg:w-1/2 h-[600px] overflow-hidden relative"
           >
             <motion.div
-              className="flex flex-col gap-4"
+              className="flex flex-col gap-6"
               animate={{ y: ["0%", "-50%"] }}
               transition={{
                 repeat: Infinity,
-                duration: 45,
+                duration: 50,
                 ease: "linear"
               }}
             >
               {[...clients, ...clients].map((client, idx) => (
                 <motion.div
                   key={idx}
-                  whileHover={{ scale: 1.05, borderColor: "rgb(147 51 234)" }}
-                  className="mx-auto w-[240px] px-6 py-4 bg-gradient-to-br from-gray-800/50 to-gray-900/50 border border-gray-700 backdrop-blur-md text-white text-sm font-medium shadow-lg text-center transition-all duration-300 rounded-xl hover:shadow-purple-500/20"
+                  whileHover={{ 
+                    scale: 1.05, 
+                    borderColor: "rgb(147 51 234)",
+                    boxShadow: "0 10px 40px rgba(147, 51, 234, 0.3)"
+                  }}
+                  className="mx-auto w-[280px] px-8 py-6 bg-gradient-to-br from-gray-800/60 to-gray-900/60 border border-gray-600/50 backdrop-blur-md text-white text-base font-semibold shadow-xl text-center transition-all duration-300 rounded-2xl hover:shadow-purple-500/30 hover:bg-gradient-to-br hover:from-gray-700/60 hover:to-gray-800/60"
                 >
                   {client}
                 </motion.div>
@@ -62,8 +66,8 @@ const Testimonials = () => {
             </motion.div>
 
             {/* Enhanced gradient fades */}
-            <div className="absolute top-0 left-0 right-0 h-24 bg-gradient-to-b from-gray-950 via-gray-950/90 to-transparent z-10" />
-            <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-gray-950 via-gray-950/90 to-transparent z-10" />
+            <div className="absolute top-0 left-0 right-0 h-32 bg-gradient-to-b from-gray-950 via-gray-950/95 to-transparent z-10" />
+            <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-gray-950 via-gray-950/95 to-transparent z-10" />
           </motion.div>
 
           {/* Right: Enhanced Testimonials */}
