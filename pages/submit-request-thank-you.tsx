@@ -95,10 +95,6 @@ export default function SubmitRequestThankYou() {
                 <div className="w-2 h-2 bg-blue-400 rounded-full"></div>
                 <span>You'll receive a personalized response within 24 hours</span>
               </div>
-              <div className="flex items-center space-x-3">
-                <div className="w-2 h-2 bg-green-400 rounded-full"></div>
-                <span>For urgent matters, feel free to call us directly</span>
-              </div>
             </div>
           </motion.div>
         </div>
