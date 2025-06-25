@@ -58,8 +58,8 @@ export default function SEOHead({ config }: SEOHeadProps) {
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={ogImage} />
-      <meta name="twitter:site" content="@Subject7" />
-      <meta name="twitter:creator" content="@Subject7" />
+      <meta name="twitter:site" content="@Subject_7" />
+      <meta name="twitter:creator" content="@Subject_7" />
       
       {/* Structured Data */}
       {structuredData && (
