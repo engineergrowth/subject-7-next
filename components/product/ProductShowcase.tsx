@@ -10,21 +10,21 @@ const showcaseItems = [
     title: "No-Code Revolution",
     description: "Empower your entire team to create comprehensive test suites without any programming knowledge.",
     image: "/testss.png",
-    badges: ["Codeless", "Drag & Drop", "Visual Editor"]
+    badges: ["Codeless", "Recorder", "Visual Editor"]
   },
   {
     icon: <Zap className="h-6 w-6" />,
     title: "Lightning Fast Execution",
     description: "Parallel test execution across multiple environments with real-time reporting and instant feedback.",
-    image: "/dash.png",
+    image: "/exsetss.png",
     badges: ["Parallel", "Real-time", "Cloud Scale"]
   },
   {
-    icon: <Users className="h-6 w-6" />,
-    title: "Enterprise Security",
-    description: "Bank-level security with role-based access, encrypted test data, and compliance reporting.",
-    image: "/z.webp",
-    badges: ["SOC 2", "GDPR", "HIPAA"]
+    icon: <Settings className="h-6 w-6" />,
+    title: "Company Repository",
+    description: "Create, manage, and reuse web locators, data templates, and datasets across all your test suites. Subject7's Company Repository accelerates test creation, ensures consistency, and makes your automation modular and scalable.",
+    image: "/locatorsss.png",
+    badges: ["Reusable", "Locators", "Data Templates", "Datasets"]
   }
 ];
 
