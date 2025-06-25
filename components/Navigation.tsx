@@ -72,13 +72,13 @@ const Navigation = () => {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="md:hidden border-t border-gray-700/50 pt-6 pb-6 bg-gray-950/95 backdrop-blur-md space-y-4">
+          <div className="md:hidden border-t border-gray-700/50 pt-6 pb-6 bg-gray-950/95 backdrop-blur-md space-y-4 overflow-x-hidden">
             {navItems.slice(0, -1).map((item, idx) => (
               <Link
                 key={idx}
                 href={item.href}
                 onClick={() => setIsMenuOpen(false)}
-                className="block text-base font-medium text-gray-100 hover:text-purple-400 px-4 py-2 transition-colors duration-300"
+                className="block text-base font-medium text-gray-100 hover:text-purple-400 py-2 transition-colors duration-300 w-full"
               >
                 {item.name}
               </Link>
@@ -88,7 +88,7 @@ const Navigation = () => {
             <Link
               href="/contact"
               onClick={() => setIsMenuOpen(false)}
-              className="block bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white px-4 py-3 rounded-xl font-semibold text-base shadow-lg mx-4 text-center transition-all duration-300"
+              className="block bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white py-3 rounded-xl font-semibold text-base shadow-lg text-center transition-all duration-300 w-full"
             >
               Book Demo
             </Link>
@@ -99,7 +99,7 @@ const Navigation = () => {
                 href="https://platform.subject7.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block text-base font-medium text-gray-300 hover:text-purple-400 px-4 py-2 transition-colors duration-300"
+                className="block text-base font-medium text-gray-300 hover:text-purple-400 py-2 transition-colors duration-300 w-full"
               >
                 Customer Login →
               </a>
