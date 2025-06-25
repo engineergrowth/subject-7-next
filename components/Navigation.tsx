@@ -14,9 +14,9 @@ const Navigation = () => {
   ];
 
   return (
-    <nav className="fixed top-0 w-full bg-gray-950/95 backdrop-blur-md border-b border-gray-700/50 z-50 shadow-lg">
+    <nav className="fixed top-0 w-full bg-gray-950/95 backdrop-blur-md border-b border-gray-700/50 z-50 shadow-lg overflow-x-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-18 min-w-0">
+        <div className="flex justify-between items-center h-16 min-w-0">
           {/* Logo */}
           <div className="flex items-center space-x-3">
             <Link href="/" className="transition-transform hover:scale-105 duration-300">
@@ -59,10 +59,11 @@ const Navigation = () => {
           </div>
 
           {/* Mobile Menu Button */}
-          <div className="md:hidden shrink-0">
+          <div className="md:hidden shrink-0 flex items-center">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               className="text-white hover:text-purple-400 transition-colors"
+              style={{ margin: 0, padding: 0 }}
             >
               {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
