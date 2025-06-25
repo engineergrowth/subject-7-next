@@ -48,7 +48,9 @@ const ContactHero = () => {
         >
           To book a demo, {" "}
           <Link
-            href="/demo"
+            href="https://calendly.com/d/csyv-3fx-d89/new-meeting"
+            target="_blank"
+            rel="noopener noreferrer"
             className="text-purple-400 underline underline-offset-4 hover:text-purple-300 transition-colors duration-300"
           >
             click here

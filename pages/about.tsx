@@ -1,4 +1,3 @@
-
 "use client";
 
 import AboutHero from "@/components/about/AboutHero";
@@ -8,6 +7,7 @@ import AboutValues from "@/components/about/AboutValues";
 import AboutLeadership from "@/components/about/AboutLeadership";
 import SEOHead from "@/components/SEOHead";
 import { getSEOConfig } from "@/lib/seo";
+import AboutCTA from "@/components/about/AboutCTA";
 
 const About = () => {
   return (
@@ -19,6 +19,7 @@ const About = () => {
         <AboutJourney />
         <AboutValues />
         <AboutLeadership />
+        <AboutCTA />
       </div>
     </>
   );
