@@ -1,6 +1,5 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { Award } from "lucide-react";
 
 const AboutLeadership = () => {
   return (
@@ -23,7 +22,7 @@ const AboutLeadership = () => {
             <div className="relative">
               <img
                 src="/z.webp"
-                alt="CEO"
+                alt="Subject7 CEO and Founder - Leading test automation innovation"
                 className="w-64 h-64 rounded-2xl object-cover border-4 border-gradient-to-r from-purple-600 to-blue-600"
               />
             

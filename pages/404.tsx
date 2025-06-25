@@ -1,10 +1,14 @@
 import Link from "next/link";
 import { AlertTriangle } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import SEOHead from "@/components/SEOHead";
+import { getSEOConfig } from "@/lib/seo";
 
 export default function Custom404() {
   return (
-    <div className="min-h-screen bg-gray-950 text-white flex items-center justify-center px-4 py-20">
+    <>
+      <SEOHead config={getSEOConfig('404')} />
+      <div className="min-h-screen bg-gray-950 text-white flex items-center justify-center px-4 py-20">
       <div className="bg-gray-900 border border-gray-800 rounded-2xl shadow-xl px-8 py-10 w-full max-w-xl text-center space-y-6">
         <div className="flex flex-col items-center space-y-2">
           <AlertTriangle className="w-10 h-10 text-yellow-500" />
@@ -22,6 +26,7 @@ export default function Custom404() {
           </Button>
         </Link>
       </div>
-    </div>
+      </div>
+    </>
   );
 }

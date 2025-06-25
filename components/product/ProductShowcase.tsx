@@ -1,4 +1,3 @@
-
 import React from "react";
 import { motion } from "framer-motion";
 import { Card } from "@/components/ui/card";
@@ -10,7 +9,7 @@ const showcaseItems = [
     icon: <Code className="h-6 w-6" />,
     title: "No-Code Revolution",
     description: "Empower your entire team to create comprehensive test suites without any programming knowledge.",
-    image: "/dashboard.webp",
+    image: "/testss.png",
     badges: ["Codeless", "Drag & Drop", "Visual Editor"]
   },
   {
@@ -158,7 +157,7 @@ const ProductShowcase = () => {
                   <img
                     src={item.image}
                     alt={item.title}
-                    className="w-full h-80 object-cover rounded-lg"
+                    className="w-full max-h-[400px] object-contain rounded-lg bg-black"
                   />
                 </Card>
               </motion.div>

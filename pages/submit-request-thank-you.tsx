@@ -2,10 +2,14 @@ import React from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { CheckCircle, Home, ArrowRight } from "lucide-react";
+import SEOHead from "../components/SEOHead";
+import { getSEOConfig } from "../lib/seo";
 
 export default function SubmitRequestThankYou() {
   return (
-    <div className="bg-gray-950 text-white min-h-screen">
+    <>
+      <SEOHead config={getSEOConfig('submit-request-thank-you')} />
+      <div className="bg-gray-950 text-white min-h-screen">
       <section className="relative bg-gray-950 text-white py-32 px-4 sm:px-6 lg:px-8 overflow-hidden min-h-screen flex items-center">
         {/* Background Effects */}
         <div className="absolute inset-0">
@@ -99,6 +103,7 @@ export default function SubmitRequestThankYou() {
           </motion.div>
         </div>
       </section>
-    </div>
+      </div>
+    </>
   );
 }
