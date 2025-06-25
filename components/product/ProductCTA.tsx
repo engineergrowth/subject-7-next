@@ -74,6 +74,7 @@ const ProductCTA = () => {
                   damping: 15
                 }}
                 viewport={{ once: true }}
+                className="flex justify-center"
               >
                 <Button 
                   size="lg"

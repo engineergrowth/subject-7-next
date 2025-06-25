@@ -1,6 +1,16 @@
 import Link from "next/link";
-import { Shield, ShieldCheck, Lock, Mail, MapPin, Linkedin, Twitter } from "lucide-react";
+import { Shield, ShieldCheck, Lock, Mail, MapPin, Linkedin } from "lucide-react";
 import { motion } from "framer-motion";
+
+const XLogo = () => (
+  <svg 
+    viewBox="0 0 24 24" 
+    className="h-5 w-5 fill-current"
+    aria-hidden="true"
+  >
+    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+  </svg>
+);
 
 const Footer = () => {
   const mainLinks = [
@@ -132,7 +142,7 @@ const Footer = () => {
               <h4 className="text-white font-medium mb-4 text-sm">Follow Us</h4>
               <div className="flex space-x-4">
                 <motion.a 
-                  href="#" 
+                  href="https://www.linkedin.com/company/subject7" 
                   className="text-gray-400 hover:text-purple-400 transition-colors"
                   aria-label="LinkedIn"
                   whileHover={{ scale: 1.1, y: -2 }}
@@ -141,13 +151,13 @@ const Footer = () => {
                   <Linkedin className="h-5 w-5" />
                 </motion.a>
                 <motion.a 
-                  href="#" 
+                  href="https://x.com/subject_7" 
                   className="text-gray-400 hover:text-purple-400 transition-colors"
-                  aria-label="Twitter"
+                  aria-label="X"
                   whileHover={{ scale: 1.1, y: -2 }}
                   transition={{ duration: 0.2 }}
                 >
-                  <Twitter className="h-5 w-5" />
+                  <XLogo />
                 </motion.a>
               </div>
             </motion.div>
