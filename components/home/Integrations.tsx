@@ -159,7 +159,9 @@ const Integrations = () => {
                   whileTap={{ scale: 0.95 }}
                 >
                   <Link
-                    href="/demo"
+                    href="https://calendly.com/d/csyv-3fx-d89/new-meeting"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white py-4 px-8 rounded-xl font-semibold text-lg shadow-lg hover:shadow-xl transition-all duration-300 flex items-center gap-3 group"
                   >
                     Schedule a Demo

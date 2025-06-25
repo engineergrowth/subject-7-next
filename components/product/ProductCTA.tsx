@@ -1,4 +1,3 @@
-
 import React from "react";
 import { motion } from "framer-motion";
 import { Card, CardContent } from "@/components/ui/card";
@@ -78,11 +77,14 @@ const ProductCTA = () => {
               >
                 <Button 
                   size="lg"
+                  asChild
                   className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white px-12 py-6 text-xl font-semibold shadow-lg hover:shadow-xl transition-all duration-300"
                 >
-                  <Calendar className="mr-3 h-6 w-6" />
-                  Book a Demo
-                  <ArrowRight className="ml-3 h-6 w-6" />
+                  <a href="https://calendly.com/d/csyv-3fx-d89/new-meeting" target="_blank" rel="noopener noreferrer">
+                    <Calendar className="mr-3 h-6 w-6" />
+                    Book a Demo
+                    <ArrowRight className="ml-3 h-6 w-6" />
+                  </a>
                 </Button>
               </motion.div>
             </CardContent>
