@@ -47,8 +47,7 @@ const ProductCTA = () => {
                 viewport={{ once: true }}
                 className="text-lg text-gray-300 mb-8 max-w-2xl mx-auto leading-relaxed"
               >
-                Book a demo and we'll walk you through it. Get a personalized walkthrough of our platform and discover how we can streamline your QA processes, 
-                reduce testing time, and improve coverage across your applications.
+                Book a demo and we'll walk you through it.
               </motion.p>
               <motion.div
                 initial={{ opacity: 0, scale: 0.8 }}
