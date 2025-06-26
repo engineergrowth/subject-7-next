@@ -16,7 +16,7 @@ const ProductCTA = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-white via-blue-100 to-purple-200 bg-clip-text text-transparent mb-6">
-            Ready to See More?
+            See How Subject7 Can Transform Your Testing
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
             Book a demo and we'll walk you through it
@@ -47,7 +47,7 @@ const ProductCTA = () => {
                 viewport={{ once: true }}
                 className="text-3xl font-bold text-white mb-6"
               >
-                See How Subject7 Can Transform Your Testing
+                Get Started Today
               </motion.h3>
               <motion.p 
                 initial={{ opacity: 0, y: 20 }}

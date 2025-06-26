@@ -7,7 +7,7 @@ import { Code, Zap, Users, Settings } from "lucide-react";
 const showcaseItems = [
   {
     icon: <Code className="h-6 w-6" />,
-    title: "No-Code Revolution",
+    title: "No-Code Paradigm",
     description: "Empower your entire team to create comprehensive test suites without any programming knowledge.",
     image: "/testss.png",
     badges: ["Codeless", "Recorder", "Visual Editor"]
@@ -39,9 +39,6 @@ const ProductShowcase = () => {
           viewport={{ once: true, margin: "-100px" }}
           className="text-center mb-20"
         >
-          <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-white via-blue-100 to-purple-200 bg-clip-text text-transparent mb-6">
-            See Subject7 in Action
-          </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
             Experience the power of unified test automation through our intuitive interface
           </p>
