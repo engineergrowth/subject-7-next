@@ -20,7 +20,7 @@ const AboutJourney = () => {
     },
     {
       year: "Now",
-      title: "Trusted, Evolving, Unstoppable",
+      title: "Trusted",
       description: "Now, Subject7 is trusted by teams worldwide. We continue to innovate, driven by our mission to make quality assurance effortless and scalable for all."
     }
   ];
