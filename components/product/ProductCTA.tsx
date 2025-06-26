@@ -34,7 +34,7 @@ const ProductCTA = () => {
                 viewport={{ once: true }}
                 className="text-3xl font-bold text-white mb-6"
               >
-                See How Subject7 Can Transform Your Testing
+                Ready To See More?
               </motion.h3>
               <motion.p 
                 initial={{ opacity: 0, y: 20 }}
