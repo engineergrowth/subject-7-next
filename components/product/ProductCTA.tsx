@@ -135,7 +135,8 @@ const ProductCTA = () => {
                 viewport={{ once: true }}
                 className="text-2xl font-medium text-white mb-4 italic"
               >
-                "Subject7 reduced our testing time by 85% while improving coverage"
+                "It came down to ease of use, enabling individuals to do their own automation almost exclusively. We’re not super technical and they didn’t have programming skills.
+We did some piloting using both tools but testers had an easier time using Subject7 than QuicktestPro."
               </motion.blockquote>
               <motion.p 
                 initial={{ opacity: 0, y: 20 }}
@@ -148,7 +149,7 @@ const ProductCTA = () => {
                 viewport={{ once: true }}
                 className="text-lg text-gray-300"
               >
-                — Enterprise Customer
+                — NIH
               </motion.p>
             </CardContent>
           </Card>
