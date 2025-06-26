@@ -1,12 +1,13 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { Star } from "lucide-react";
 
 const AboutStats = () => {
   const stats = [
     { value: "2011", label: "Founded" },
-    { value: "10M+", label: "Test Runs" },
-    { value: "95%", label: "Customer Satisfaction"},
-    { value: "99.9%", label: "Uptime" }
+    { value: "95%", label: "Customer Satisfaction" },
+    { value: "99.9%", label: "Uptime" },
+    { value: "5.0", label: "Capterra Rating", isCapterra: true },
   ];
 
   return (
@@ -21,8 +22,11 @@ const AboutStats = () => {
               transition={{ duration: 0.6, delay: index * 0.1 }}
               className="text-center"
             >
-              <div className="text-4xl lg:text-5xl font-bold bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent mb-2">
-                {stat.value}
+              <div className="flex items-center justify-center gap-2 mb-2">
+                <span className="text-4xl lg:text-5xl font-bold bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">
+                  {stat.value}
+                </span>
+                {stat.isCapterra && <Star className="h-6 w-6 text-yellow-400" fill="#facc15" />}
               </div>
               <div className="text-gray-400 text-lg">{stat.label}</div>
             </motion.div>

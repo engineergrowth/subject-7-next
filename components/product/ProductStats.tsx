@@ -1,32 +1,31 @@
-
 import React from "react";
 import { motion } from "framer-motion";
 import { TrendingUp, Users, Clock, Shield } from "lucide-react";
 
 const stats = [
   {
-    icon: <TrendingUp className="h-8 w-8" />,
+    icon: <TrendingUp className="h-7 w-7 text-white" />,
     value: "10x",
     label: "Faster test execution",
-    description: "Accelerate your testing cycles with parallel execution and smart test optimization"
+    iconBg: "bg-gradient-to-br from-purple-600 to-blue-600"
   },
   {
-    icon: <Users className="h-8 w-8" />,
+    icon: <Users className="h-7 w-7 text-white" />,
     value: "85%",
     label: "Reduction in QA resources",
-    description: "Enable business users to create tests without technical expertise"
+    iconBg: "bg-gradient-to-br from-purple-600 to-blue-600"
   },
   {
-    icon: <Clock className="h-8 w-8" />,
+    icon: <Clock className="h-7 w-7 text-white" />,
     value: "60%",
     label: "Faster time to market",
-    description: "Ship quality software faster with continuous testing integration"
+    iconBg: "bg-gradient-to-br from-purple-600 to-blue-600"
   },
   {
-    icon: <Shield className="h-8 w-8" />,
+    icon: <Shield className="h-7 w-7 text-white" />,
     value: "99.99%",
     label: "Test reliability",
-    description: "Self-healing tests that adapt to application changes automatically"
+    iconBg: "bg-gradient-to-br from-purple-600 to-blue-600"
   }
 ];
 
@@ -62,62 +61,15 @@ const ProductStats = () => {
                 ease: [0.25, 0.46, 0.45, 0.94]
               }}
               viewport={{ once: true, margin: "-100px" }}
-              className="bg-gradient-to-br from-gray-800/50 to-gray-900/50 border border-gray-700 rounded-2xl p-8 text-center hover:border-purple-500/50 transition-all duration-300 group"
+              className="bg-gradient-to-br from-gray-800/50 to-gray-900/50 border border-gray-700 rounded-2xl p-4 text-center hover:border-purple-500/50 transition-all duration-300 group"
             >
-              <motion.div 
-                initial={{ scale: 0, opacity: 0 }}
-                whileInView={{ scale: 1, opacity: 1 }}
-                transition={{ 
-                  duration: 0.6, 
-                  delay: index * 0.1 + 0.3,
-                  type: "spring",
-                  stiffness: 150,
-                  damping: 15
-                }}
-                viewport={{ once: true }}
-                className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-purple-600 to-blue-600 rounded-xl mb-6 group-hover:scale-110 transition-transform shadow-lg shadow-purple-500/25"
-              >
-                {React.cloneElement(stat.icon, { className: "h-8 w-8 text-white" })}
-              </motion.div>
-              <motion.div 
-                initial={{ opacity: 0, y: 10 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ 
-                  duration: 0.6, 
-                  delay: index * 0.1 + 0.5,
-                  ease: [0.25, 0.46, 0.45, 0.94]
-                }}
-                viewport={{ once: true }}
-                className="text-4xl font-bold bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent mb-2"
-              >
-                {stat.value}
-              </motion.div>
-              <motion.div 
-                initial={{ opacity: 0, y: 10 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ 
-                  duration: 0.6, 
-                  delay: index * 0.1 + 0.7,
-                  ease: [0.25, 0.46, 0.45, 0.94]
-                }}
-                viewport={{ once: true }}
-                className="text-lg font-semibold text-purple-400 mb-3"
-              >
-                {stat.label}
-              </motion.div>
-              <motion.p 
-                initial={{ opacity: 0, y: 10 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ 
-                  duration: 0.6, 
-                  delay: index * 0.1 + 0.9,
-                  ease: [0.25, 0.46, 0.45, 0.94]
-                }}
-                viewport={{ once: true }}
-                className="text-gray-300 text-sm leading-relaxed"
-              >
-                {stat.description}
-              </motion.p>
+              <div className="flex flex-col items-center">
+                <div className={`w-14 h-14 flex items-center justify-center rounded-full mb-3 shadow-lg ${stat.iconBg}`}>
+                  {stat.icon}
+                </div>
+                <span className="text-3xl font-bold text-white mb-1">{stat.value}</span>
+                <span className="text-base font-semibold text-gray-200">{stat.label}</span>
+              </div>
             </motion.div>
           ))}
         </div>

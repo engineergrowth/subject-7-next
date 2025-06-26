@@ -4,22 +4,22 @@ import { motion } from "framer-motion";
 const AboutJourney = () => {
   const milestones = [
     {
-      year: "Early Days",
+      year: "2011",
       title: "A Frustration Sparks Innovation",
-      description: "A small team of passionate testers set out in 2011 to build a better way—one that made automation accessible, fast, and reliable for everyone."
+      description: "A small team of passionate testers set out to build a better way—one that made automation accessible, fast, and reliable for everyone."
     },
     {
-      year: "First Breakthroughs",
+      year: "Growth",
       title: "From Idea to Impact",
       description: "Our platform quickly gained traction, helping teams automate complex testing without code and proving that simplicity and power can go hand in hand."
     },
     {
-      year: "Scaling Up",
+      year: "Scale",
       title: "Growth & Evolution",
       description: "With each release, we expanded our capabilities—supporting more platforms, deeper integrations, and empowering organizations of all sizes."
     },
     {
-      year: "Today & Beyond",
+      year: "Now",
       title: "Trusted, Evolving, Unstoppable",
       description: "Now, Subject7 is trusted by teams worldwide. We continue to innovate, driven by our mission to make quality assurance effortless and scalable for all."
     }
@@ -71,7 +71,7 @@ const AboutJourney = () => {
                   viewport={{ once: true }}
                   className="relative mb-6"
                 >
-                  <div className="w-16 h-16 bg-gradient-to-br from-purple-600 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg shadow-purple-500/25">
+                  <div className="w-20 h-20 bg-gradient-to-br from-purple-600 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg shadow-purple-500/25">
                     <span className="text-white font-bold text-lg">{milestone.year}</span>
                   </div>
                 </motion.div>
@@ -86,7 +86,7 @@ const AboutJourney = () => {
                   }}
                   viewport={{ once: true }}
                 >
-                  <h3 className="text-xl font-bold mb-4 text-center group-hover:text-purple-300 transition-colors duration-300">
+                  <h3 className="text-xl font-bold mb-4 text-center group-hover:text-purple-300 transition-colors duration-300 min-h-[56px]">
                     {milestone.title}
                   </h3>
                   <p className="text-gray-300 text-sm leading-relaxed text-center">
