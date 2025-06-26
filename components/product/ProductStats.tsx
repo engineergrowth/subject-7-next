@@ -23,7 +23,7 @@ const stats = [
   },
   {
     icon: <Shield className="h-7 w-7 text-white" />,
-    value: "99.99%",
+    value: "99.999%",
     label: "Test reliability",
     iconBg: "bg-gradient-to-br from-purple-600 to-blue-600"
   }

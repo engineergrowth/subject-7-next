@@ -6,7 +6,7 @@ const AboutStats = () => {
   const stats = [
     { value: "2011", label: "Founded" },
     { value: "95%", label: "Customer Satisfaction" },
-    { value: "99.9%", label: "Uptime" },
+    { value: "99.999%", label: "Uptime" },
     { value: "5.0", label: "Capterra Rating", isCapterra: true },
   ];
 
