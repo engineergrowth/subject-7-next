@@ -14,18 +14,18 @@ const Navigation = () => {
   ];
 
   return (
-    <nav className="fixed top-0 w-full bg-gray-950/95 backdrop-blur-md border-b border-gray-700/50 z-50 shadow-lg overflow-x-hidden">
+    <nav className="fixed top-0 left-0 right-0 bg-gray-950/95 backdrop-blur-md border-b border-gray-700/50 z-50 shadow-lg">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16 min-w-0">
+        <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <div className="flex items-center space-x-3">
+          <div className="flex items-center space-x-3 flex-shrink-0">
             <Link href="/" className="transition-transform hover:scale-105 duration-300">
-              <img src="/logo.png" alt="Subject7 Logo" className="h-10 w-auto" />
+              <img src="/logo.png" alt="Subject7 Logo" className="h-8 sm:h-10 w-auto" />
             </Link>
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex items-center space-x-8 flex-1 justify-center">
             {navItems.slice(0, -1).map((item, idx) => (
               <Link
                 key={idx}
@@ -49,10 +49,10 @@ const Navigation = () => {
           </div>
 
           {/* Customer Login */}
-          <div className="hidden md:block">
+          <div className="hidden md:block flex-shrink-0">
             <a
               href="https://platform.subject7.com/"
-              className="text-base font-medium text-gray-300 hover:text-purple-400 transition-colors duration-300 border-l border-gray-700 pl-6"
+              className="text-base font-medium text-gray-300 hover:text-purple-400 transition-colors duration-300 border-l border-gray-700 pl-6 whitespace-nowrap"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -61,11 +61,11 @@ const Navigation = () => {
           </div>
 
           {/* Mobile Menu Button */}
-          <div className="md:hidden shrink-0 flex items-center">
+          <div className="md:hidden flex-shrink-0">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="text-white hover:text-purple-400 transition-colors"
-              style={{ margin: 0, padding: 0 }}
+              className="text-white hover:text-purple-400 transition-colors p-2 -mr-2"
+              aria-label="Toggle menu"
             >
               {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
@@ -74,7 +74,7 @@ const Navigation = () => {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="md:hidden border-t border-gray-700/50 pt-6 pb-6 bg-gray-950/95 backdrop-blur-md space-y-4 overflow-x-hidden">
+          <div className="md:hidden border-t border-gray-700/50 pt-6 pb-6 bg-gray-950/95 backdrop-blur-md space-y-4">
             {navItems.slice(0, -1).map((item, idx) => (
               <Link
                 key={idx}

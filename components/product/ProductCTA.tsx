@@ -16,7 +16,7 @@ const ProductCTA = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-white via-blue-100 to-purple-200 bg-clip-text text-transparent mb-6">
-            Ready to See Subject7 in Action?
+            Ready to See More?
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
             Book a demo and we'll walk you through it
