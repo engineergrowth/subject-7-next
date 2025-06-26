@@ -4,24 +4,24 @@ import { motion } from "framer-motion";
 const AboutJourney = () => {
   const milestones = [
     {
-      year: "2011",
-      title: "The Beginning",
-      description: "Founded by senior engineers in Maryland who were frustrated with existing testing tools that were slow, brittle, and overly complex."
+      year: "Early Days",
+      title: "A Frustration Sparks Innovation",
+      description: "A small team of passionate testers set out in 2011 to build a better way—one that made automation accessible, fast, and reliable for everyone."
     },
     {
-      year: "2020",
-      title: "Government Trust",
-      description: "Achieved first major government contracts with FDA and Department of Education, establishing our reputation for security and reliability."
+      year: "First Breakthroughs",
+      title: "From Idea to Impact",
+      description: "Our platform quickly gained traction, helping teams automate complex testing without code and proving that simplicity and power can go hand in hand."
     },
     {
-      year: "2022",
-      title: "Enterprise Scale",
-      description: "Reached 10M+ test runs annually, supporting some of the world's most demanding testing environments across Fortune 500 companies."
+      year: "Scaling Up",
+      title: "Growth & Evolution",
+      description: "With each release, we expanded our capabilities—supporting more platforms, deeper integrations, and empowering organizations of all sizes."
     },
     {
-      year: "2024",
-      title: "Global Impact",
-      description: "Now trusted by enterprise clients worldwide, from government agencies to global corporations, powering mission-critical applications."
+      year: "Today & Beyond",
+      title: "Trusted, Evolving, Unstoppable",
+      description: "Now, Subject7 is trusted by teams worldwide. We continue to innovate, driven by our mission to make quality assurance effortless and scalable for all."
     }
   ];
 
