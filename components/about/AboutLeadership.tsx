@@ -37,8 +37,7 @@ const AboutLeadership = () => {
             className="lg:w-2/3"
           >
             <blockquote className="text-2xl text-gray-300 italic mb-8 leading-relaxed">
-              "We built Subject7 because we were tired of testing tools that promised the world but delivered complexity. 
-              Our vision is simple: make comprehensive test automation accessible to every team, regardless of technical expertise."
+              "Our vision is simple: make comprehensive test automation accessible to every team, regardless of technical expertise."
             </blockquote>
             
             <div className="border-l-4 border-purple-600 pl-6">
