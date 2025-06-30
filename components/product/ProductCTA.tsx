@@ -21,7 +21,7 @@ const ProductCTA = () => {
           }}
           viewport={{ once: true, margin: "-100px" }}
         >
-          <Card className="bg-gradient-to-br from-gray-800/50 to-gray-900/50 border-gray-700 hover:border-purple-500/50 transition-all duration-500 mb-16">
+          <Card className="bg-gray-900/80 border-gray-700 hover:border-purple-500/50 transition-all duration-500 mb-16">
             <CardContent className="p-12 text-center">
               <motion.h3 
                 initial={{ opacity: 0, y: 20 }}
@@ -65,7 +65,7 @@ const ProductCTA = () => {
                 <Button 
                   size="lg"
                   asChild
-                  className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white px-12 py-6 text-xl font-semibold shadow-lg hover:shadow-xl transition-all duration-300"
+                  className="bg-purple-800 hover:bg-purple-700 text-white px-12 py-6 text-xl font-semibold shadow-lg hover:shadow-xl transition-all duration-300"
                 >
                   <a href="https://calendly.com/d/csyv-3fx-d89/new-meeting" target="_blank" rel="noopener noreferrer">
                     <Calendar className="mr-3 h-6 w-6" />
@@ -89,7 +89,7 @@ const ProductCTA = () => {
           }}
           viewport={{ once: true, margin: "-100px" }}
         >
-          <Card className="bg-gradient-to-r from-purple-900/30 to-blue-900/30 border-purple-500/20 p-8 text-center">
+          <Card className="bg-gray-900/60 border-purple-500/20 p-8 text-center">
             <CardContent className="p-0">
               <motion.div 
                 initial={{ opacity: 0, scale: 0 }}
@@ -105,9 +105,9 @@ const ProductCTA = () => {
                 className="flex items-center justify-center mb-6"
               >
                 <div className="flex -space-x-2">
-                  <div className="w-12 h-12 bg-gradient-to-br from-purple-600 to-blue-600 rounded-full border-2 border-gray-800"></div>
-                  <div className="w-12 h-12 bg-gradient-to-br from-blue-600 to-indigo-600 rounded-full border-2 border-gray-800"></div>
-                  <div className="w-12 h-12 bg-gradient-to-br from-indigo-600 to-purple-600 rounded-full border-2 border-gray-800"></div>
+                  <div className="w-12 h-12 bg-purple-800 rounded-full border-2 border-gray-800"></div>
+                  <div className="w-12 h-12 bg-purple-700 rounded-full border-2 border-gray-800"></div>
+                  <div className="w-12 h-12 bg-orange-600 rounded-full border-2 border-gray-800"></div>
                 </div>
               </motion.div>
               <motion.blockquote 

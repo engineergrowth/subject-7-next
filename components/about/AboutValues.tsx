@@ -30,7 +30,7 @@ const AboutValues = () => {
     <section className="py-24 px-4 sm:px-6 lg:px-8 bg-gray-900/30">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-20">
-          <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-white via-blue-100 to-purple-200 bg-clip-text text-transparent mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
             What Drives Us
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
@@ -62,7 +62,7 @@ const AboutValues = () => {
                   stiffness: 150,
                   damping: 15
                 }}
-                className="w-16 h-16 rounded-xl bg-gradient-to-br from-purple-600 to-indigo-600 flex items-center justify-center mb-6"
+                className="w-16 h-16 rounded-xl bg-purple-800 flex items-center justify-center mb-6"
               >
                 <value.icon className="text-white" size={28} />
               </motion.div>

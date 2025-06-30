@@ -6,7 +6,7 @@ const AboutLeadership = () => {
     <section className="py-24 px-4 sm:px-6 lg:px-8">
       <div className="max-w-5xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-white via-blue-100 to-purple-200 bg-clip-text text-transparent mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
             Leadership
           </h2>
         </div>
@@ -41,9 +41,9 @@ const AboutLeadership = () => {
               Our vision is simple: make comprehensive test automation accessible to every team, regardless of technical expertise."
             </blockquote>
             
-            <div className="border-l-4 border-purple-600 pl-6">
+            <div className="border-l-4 border-purple-800 pl-6">
               <h3 className="text-2xl font-bold text-white mb-2">Kezia "Z" Braithwaite</h3>
-              <p className="text-purple-400 text-lg mb-4">CEO & Co-Founder</p>
+              <p className="text-orange-600 text-lg mb-4">CEO & Co-Founder</p>
               <p className="text-gray-300 leading-relaxed">
                 With over 20 years in enterprise technology, Z leads Subject7's mission to democratize 
                 test automation. Previously working with major government contractors, she understands the 

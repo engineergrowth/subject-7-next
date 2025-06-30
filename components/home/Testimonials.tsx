@@ -23,7 +23,7 @@ const Testimonials = () => {
           viewport={{ once: true, margin: "-100px" }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-white via-blue-100 to-purple-200 bg-clip-text text-transparent mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
             Trusted by Government & Enterprise
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
@@ -58,16 +58,16 @@ const Testimonials = () => {
                     borderColor: "rgb(147 51 234)",
                     boxShadow: "0 10px 40px rgba(147, 51, 234, 0.3)"
                   }}
-                  className="mx-auto w-[280px] px-8 py-6 bg-gradient-to-br from-gray-800/60 to-gray-900/60 border border-gray-600/50 backdrop-blur-md text-white text-base font-semibold shadow-xl text-center transition-all duration-300 rounded-2xl hover:shadow-purple-500/30 hover:bg-gradient-to-br hover:from-gray-700/60 hover:to-gray-800/60"
+                  className="mx-auto w-[280px] px-8 py-6 bg-gray-900/80 border border-gray-600/50 backdrop-blur-md text-white text-base font-semibold shadow-xl text-center transition-all duration-300 rounded-2xl hover:shadow-purple-500/30 hover:bg-gray-800/80"
                 >
                   {client}
                 </motion.div>
               ))}
             </motion.div>
 
-            {/* Enhanced gradient fades */}
-            <div className="absolute top-0 left-0 right-0 h-32 bg-gradient-to-b from-gray-950 via-gray-950/95 to-transparent z-10" />
-            <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-gray-950 via-gray-950/95 to-transparent z-10" />
+            {/* Enhanced fades */}
+            <div className="absolute top-0 left-0 right-0 h-32 bg-gray-950 z-10" style={{background: 'linear-gradient(to bottom, rgb(3 7 18) 0%, rgb(3 7 18 / 0.95) 50%, transparent 100%)'}} />
+            <div className="absolute bottom-0 left-0 right-0 h-32 bg-gray-950 z-10" style={{background: 'linear-gradient(to top, rgb(3 7 18) 0%, rgb(3 7 18 / 0.95) 50%, transparent 100%)'}} />
           </motion.div>
 
           {/* Right: Enhanced Testimonials */}
@@ -101,7 +101,7 @@ const Testimonials = () => {
                 }}
                 viewport={{ once: true, margin: "-100px" }}
               >
-                <Card className="bg-gradient-to-br from-gray-800/50 to-gray-900/50 border border-gray-700 hover:border-purple-500/50 p-8 shadow-lg hover:shadow-xl transition-all duration-300 group">
+                <Card className="bg-gray-900/80 border border-gray-700 hover:border-purple-500/50 p-8 shadow-lg hover:shadow-xl transition-all duration-300 group">
                   <CardContent className="p-0">
                     <div className="flex mb-6">
                       {[...Array(5)].map((_, starIdx) => (
@@ -117,7 +117,7 @@ const Testimonials = () => {
                           }}
                           viewport={{ once: true }}
                         >
-                          <Star className="text-yellow-400 fill-current" size={20} />
+                          <Star className="text-orange-600 fill-current" size={20} />
                         </motion.div>
                       ))}
                     </div>
@@ -125,7 +125,7 @@ const Testimonials = () => {
                       {t.quote}
                     </blockquote>
                     <div className="border-t border-gray-700 pt-4">
-                      <cite className="text-purple-400 font-semibold">— {t.source}</cite>
+                      <cite className="text-purple-700 font-semibold">— {t.source}</cite>
                       <p className="text-gray-500 text-sm mt-1">{t.role}</p>
                     </div>
                   </CardContent>

@@ -21,7 +21,7 @@ const AboutStats = () => {
               transition={{ duration: 0.6, delay: index * 0.1 }}
               className="text-center"
             >
-              <div className="text-4xl lg:text-5xl font-bold bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent mb-2">
+              <div className="text-4xl lg:text-5xl font-bold text-white mb-2">
                 {stat.value}
               </div>
               <div className="text-gray-400 text-lg">{stat.label}</div>

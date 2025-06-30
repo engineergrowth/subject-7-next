@@ -42,7 +42,7 @@ const Navigation = () => {
               href="https://calendly.com/d/csyv-3fx-d89/new-meeting"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white px-6 py-2.5 rounded-xl font-semibold text-base shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
+              className="bg-purple-800 hover:bg-purple-700 text-white px-6 py-2.5 rounded-xl font-semibold text-base shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
             >
               Book Demo
             </Link>
@@ -92,7 +92,7 @@ const Navigation = () => {
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => setIsMenuOpen(false)}
-              className="block bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white py-3 rounded-xl font-semibold text-base shadow-lg text-center transition-all duration-300 w-full"
+              className="block bg-purple-800 hover:bg-purple-700 text-white py-3 rounded-xl font-semibold text-base shadow-lg text-center transition-all duration-300 w-full"
             >
               Book Demo
             </Link>

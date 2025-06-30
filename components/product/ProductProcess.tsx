@@ -7,25 +7,25 @@ const steps = [
     icon: <Play className="h-8 w-8" />,
     title: "Record",
     description: "Simply interact with your application while Subject7 intelligently captures every action and creates resilient test scripts.",
-    color: "from-blue-600 to-cyan-600"
+    color: "from-purple-800 to-purple-700"
   },
   {
     icon: <Settings className="h-8 w-8" />,
     title: "Enhance",
     description: "Add validations, test data, and conditional logic through our intuitive visual editor without writing code.",
-    color: "from-purple-600 to-pink-600"
+    color: "from-purple-800 to-purple-700"
   },
   {
     icon: <BarChart3 className="h-8 w-8" />,
     title: "Execute",
     description: "Run tests across multiple browsers, devices, and environments with parallel execution and real-time monitoring.",
-    color: "from-green-600 to-emerald-600"
+    color: "from-purple-800 to-purple-700"
   },
   {
     icon: <Rocket className="h-8 w-8" />,
     title: "Scale",
     description: "Integrate with CI/CD pipelines, schedule automated runs, and generate comprehensive reports for stakeholders.",
-    color: "from-orange-600 to-red-600"
+    color: "from-purple-800 to-purple-700"
   }
 ];
 
@@ -40,7 +40,7 @@ const ProductProcess = () => {
           viewport={{ once: true, margin: "-100px" }}
           className="text-center mb-20"
         >
-          <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-white via-blue-100 to-purple-200 bg-clip-text text-transparent mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
             How Subject7 Works
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
@@ -87,7 +87,7 @@ const ProductProcess = () => {
                     ease: [0.25, 0.46, 0.45, 0.94]
                   }}
                   viewport={{ once: true }}
-                  className="text-2xl font-bold bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent mb-2"
+                  className="text-2xl font-bold text-orange-600 mb-2"
                 >
                   {String(index + 1).padStart(2, '0')}
                 </motion.div>

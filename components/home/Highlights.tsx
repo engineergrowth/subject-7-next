@@ -8,28 +8,28 @@ const Highlights = () => {
       title: "Unified Test Automation",
       description:
         "Author, run, and manage tests across web, desktop, API, and DB. One powerful platform, total coverage.",
-      color: "from-blue-600 to-cyan-600"
+      color: "bg-purple-800"
     },
     {
       icon: Layers3,
       title: "Codeless by Design",
       description:
         "Build tests visually without writing code. Empower QA teams to move fast with confidence.",
-      color: "from-purple-600 to-violet-600"
+      color: "bg-purple-800"
     },
     {
       icon: Server,
       title: "CI/CD Ready",
       description:
         "Connect seamlessly to GitHub, Azure, and other tools to fit right into your existing workflows.",
-      color: "from-green-600 to-emerald-600"
+      color: "bg-purple-800"
     },
     {
       icon: ShieldCheck,
       title: "Secure & Compliant",
       description:
         "Trusted by leading federal agencies and enterprises alike.",
-      color: "from-orange-600 to-red-600"
+      color: "bg-purple-800"
     }
   ];
 
@@ -43,7 +43,7 @@ const Highlights = () => {
           viewport={{ once: true, margin: "-100px" }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-white via-blue-100 to-purple-200 bg-clip-text text-transparent mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
             Unified Test Automation, Redefined
           </h2>
           <p className="text-xl text-gray-300 max-w-4xl mx-auto leading-relaxed">
@@ -65,7 +65,7 @@ const Highlights = () => {
               viewport={{ once: true, margin: "-100px" }}
               className="group"
             >
-              <div className="flex items-start space-x-6 bg-gradient-to-br from-gray-800/50 to-gray-900/50 p-8 rounded-2xl border border-gray-700 hover:border-purple-500/50 transition-all duration-300 h-full">
+              <div className="flex items-start space-x-6 bg-gray-900/80 p-8 rounded-2xl border border-gray-700 hover:border-purple-500/50 transition-all duration-300 h-full">
                 <motion.div 
                   initial={{ scale: 0, opacity: 0 }}
                   whileInView={{ scale: 1, opacity: 1 }}
@@ -77,7 +77,7 @@ const Highlights = () => {
                     damping: 15
                   }}
                   viewport={{ once: true }}
-                  className={`w-16 h-16 rounded-xl bg-gradient-to-br ${point.color} flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg flex-shrink-0`}
+                  className={`w-16 h-16 rounded-xl ${point.color} flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg flex-shrink-0`}
                 >
                   <point.icon className="text-white" size={28} />
                 </motion.div>

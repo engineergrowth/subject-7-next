@@ -24,7 +24,7 @@ const capabilities = [
       "Self-healing test scripts",
       "Visual regression testing"
     ],
-    color: "from-blue-600 to-cyan-600"
+    color: "from-purple-800 to-purple-700"
   },
   {
     icon: <Network size={32} />,
@@ -37,7 +37,7 @@ const capabilities = [
       "Response assertions",
       "API chaining workflows"
     ],
-    color: "from-green-600 to-emerald-600"
+    color: "from-purple-800 to-purple-700"
   },
   {
     icon: <Database size={32} />,
@@ -50,7 +50,7 @@ const capabilities = [
       "No SQL knowledge required",
       "Real-time data validation"
     ],
-    color: "from-purple-600 to-violet-600"
+    color: "from-purple-800 to-purple-700"
   },
   {
     icon: <GaugeCircle size={32} />,
@@ -63,7 +63,7 @@ const capabilities = [
       "Performance benchmarking",
       "Stress test scenarios"
     ],
-    color: "from-orange-600 to-red-600"
+    color: "from-purple-800 to-purple-700"
   },
   {
     icon: <AppWindow size={32} />,
@@ -76,7 +76,7 @@ const capabilities = [
       "Windows compatibility",
       "Thick client automation"
     ],
-    color: "from-indigo-600 to-blue-600"
+    color: "from-purple-800 to-purple-700"
   },
   {
     icon: <Smartphone size={32} />,
@@ -89,7 +89,7 @@ const capabilities = [
       "Mobile-specific assertions",
       "App store validation"
     ],
-    color: "from-pink-600 to-rose-600"
+    color: "from-purple-800 to-purple-700"
   }
 ];
 
@@ -104,7 +104,7 @@ const ProductCapabilities = () => {
           viewport={{ once: true, margin: "-100px" }}
           className="text-center mb-20"
         >
-          <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-white via-blue-100 to-purple-200 bg-clip-text text-transparent mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
             Complete Testing Coverage
           </h2>
           <p className="text-xl text-gray-300 max-w-4xl mx-auto leading-relaxed">
@@ -186,7 +186,7 @@ const ProductCapabilities = () => {
                         viewport={{ once: true }}
                         className="flex items-center space-x-3"
                       >
-                        <CheckCircle className="h-5 w-5 text-green-400 flex-shrink-0" />
+                        <CheckCircle className="h-5 w-5 text-orange-600 flex-shrink-0" />
                         <span className="text-gray-300">{feature}</span>
                       </motion.div>
                     ))}

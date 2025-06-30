@@ -41,7 +41,7 @@ const ProductStats = () => {
           viewport={{ once: true, margin: "-100px" }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-white via-blue-100 to-purple-200 bg-clip-text text-transparent mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
             Proven Results Across Industries
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
@@ -75,7 +75,7 @@ const ProductStats = () => {
                   damping: 15
                 }}
                 viewport={{ once: true }}
-                className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-purple-600 to-blue-600 rounded-xl mb-6 group-hover:scale-110 transition-transform shadow-lg shadow-purple-500/25"
+                className="inline-flex items-center justify-center w-16 h-16 bg-purple-800 rounded-xl mb-6 group-hover:scale-110 transition-transform shadow-lg"
               >
                 {React.cloneElement(stat.icon, { className: "h-8 w-8 text-white" })}
               </motion.div>
@@ -88,7 +88,7 @@ const ProductStats = () => {
                   ease: [0.25, 0.46, 0.45, 0.94]
                 }}
                 viewport={{ once: true }}
-                className="text-4xl font-bold bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent mb-2"
+                className="text-4xl font-bold text-white mb-2"
               >
                 {stat.value}
               </motion.div>
@@ -101,7 +101,7 @@ const ProductStats = () => {
                   ease: [0.25, 0.46, 0.45, 0.94]
                 }}
                 viewport={{ once: true }}
-                className="text-lg font-semibold text-purple-400 mb-3"
+                className="text-lg font-semibold text-orange-600 mb-3"
               >
                 {stat.label}
               </motion.div>
