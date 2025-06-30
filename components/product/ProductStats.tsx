@@ -62,62 +62,69 @@ const ProductStats = () => {
                 ease: [0.25, 0.46, 0.45, 0.94]
               }}
               viewport={{ once: true, margin: "-100px" }}
-              className="bg-gradient-to-br from-gray-800/50 to-gray-900/50 border border-gray-700 rounded-2xl p-8 text-center hover:border-purple-500/50 transition-all duration-300 group"
+              className="bg-gradient-to-br from-gray-800/50 to-gray-900/50 border border-gray-700 rounded-2xl p-8 hover:border-purple-500/50 transition-all duration-300 group"
             >
-              <motion.div 
-                initial={{ scale: 0, opacity: 0 }}
-                whileInView={{ scale: 1, opacity: 1 }}
-                transition={{ 
-                  duration: 0.6, 
-                  delay: index * 0.1 + 0.3,
-                  type: "spring",
-                  stiffness: 150,
-                  damping: 15
-                }}
-                viewport={{ once: true }}
-                className="inline-flex items-center justify-center w-16 h-16 bg-purple-800 rounded-xl mb-6 group-hover:scale-110 transition-transform shadow-lg"
-              >
-                {React.cloneElement(stat.icon, { className: "h-8 w-8 text-white" })}
-              </motion.div>
-              <motion.div 
-                initial={{ opacity: 0, y: 10 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ 
-                  duration: 0.6, 
-                  delay: index * 0.1 + 0.5,
-                  ease: [0.25, 0.46, 0.45, 0.94]
-                }}
-                viewport={{ once: true }}
-                className="text-4xl font-bold text-white mb-2"
-              >
-                {stat.value}
-              </motion.div>
-              <motion.div 
-                initial={{ opacity: 0, y: 10 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ 
-                  duration: 0.6, 
-                  delay: index * 0.1 + 0.7,
-                  ease: [0.25, 0.46, 0.45, 0.94]
-                }}
-                viewport={{ once: true }}
-                className="text-lg font-semibold text-purple-700 mb-3 h-14 flex items-center justify-center"
-              >
-                {stat.label}
-              </motion.div>
-              <motion.p 
-                initial={{ opacity: 0, y: 10 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ 
-                  duration: 0.6, 
-                  delay: index * 0.1 + 0.9,
-                  ease: [0.25, 0.46, 0.45, 0.94]
-                }}
-                viewport={{ once: true }}
-                className="text-gray-300 text-sm leading-relaxed"
-              >
-                {stat.description}
-              </motion.p>
+              {/* Top section with icon and stat */}
+              <div className="text-center mb-6">
+                <motion.div 
+                  initial={{ scale: 0, opacity: 0 }}
+                  whileInView={{ scale: 1, opacity: 1 }}
+                  transition={{ 
+                    duration: 0.6, 
+                    delay: index * 0.1 + 0.3,
+                    type: "spring",
+                    stiffness: 150,
+                    damping: 15
+                  }}
+                  viewport={{ once: true }}
+                  className="inline-flex items-center justify-center w-16 h-16 bg-purple-800 rounded-xl mb-4 group-hover:scale-110 transition-transform shadow-lg"
+                >
+                  {React.cloneElement(stat.icon, { className: "h-8 w-8 text-white" })}
+                </motion.div>
+                <motion.div 
+                  initial={{ opacity: 0, y: 10 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ 
+                    duration: 0.6, 
+                    delay: index * 0.1 + 0.5,
+                    ease: [0.25, 0.46, 0.45, 0.94]
+                  }}
+                  viewport={{ once: true }}
+                  className="text-5xl font-bold text-white mb-2"
+                >
+                  {stat.value}
+                </motion.div>
+              </div>
+
+              {/* Bottom section with label and description */}
+              <div className="text-left">
+                <motion.h3 
+                  initial={{ opacity: 0, y: 10 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ 
+                    duration: 0.6, 
+                    delay: index * 0.1 + 0.7,
+                    ease: [0.25, 0.46, 0.45, 0.94]
+                  }}
+                  viewport={{ once: true }}
+                  className="text-xl font-bold text-white mb-3 leading-tight"
+                >
+                  {stat.label}
+                </motion.h3>
+                <motion.p 
+                  initial={{ opacity: 0, y: 10 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ 
+                    duration: 0.6, 
+                    delay: index * 0.1 + 0.9,
+                    ease: [0.25, 0.46, 0.45, 0.94]
+                  }}
+                  viewport={{ once: true }}
+                  className="text-gray-300 text-sm leading-relaxed"
+                >
+                  {stat.description}
+                </motion.p>
+              </div>
             </motion.div>
           ))}
         </div>
