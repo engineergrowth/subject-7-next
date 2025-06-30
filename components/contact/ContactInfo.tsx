@@ -83,7 +83,7 @@ const ContactInfo = () => {
               </motion.div>
               <h3 className="text-lg font-semibold text-white mb-2">{info.title}</h3>
               <p className="text-gray-400 text-sm mb-3">{info.description}</p>
-              <p className="text-orange-500 font-medium">{info.value}</p>
+              <p className="text-purple-700 font-medium">{info.value}</p>
             </motion.div>
           ))}
         </div>
