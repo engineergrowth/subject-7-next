@@ -30,7 +30,7 @@ const ContactInfo = () => {
       title: "Response Time",
       description: "We're quick to respond",
       value: "Within 24 hours",
-      color: "from-orange-600 to-red-600"
+      color: "from-orange-500 to-red-600"
     }
   ];
 

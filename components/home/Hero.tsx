@@ -31,7 +31,7 @@ const Hero = () => {
         >
           Focus on building. Let our platform handle the repetitive QA work. 
           Ship faster, catch bugs sooner, and drive your roadmap forward. We are the{" "}
-          <span className="text-orange-600 font-semibold">#1 trusted QA Automation platform</span>{" "}
+          <span className="text-orange-500 font-semibold">#1 trusted QA Automation platform</span>{" "}
           of GovTech & Enterprise companies.
         </motion.p>
 
