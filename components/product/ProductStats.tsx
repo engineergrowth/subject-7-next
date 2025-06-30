@@ -101,7 +101,7 @@ const ProductStats = () => {
                   ease: [0.25, 0.46, 0.45, 0.94]
                 }}
                 viewport={{ once: true }}
-                className="text-lg font-semibold text-orange-500 mb-3"
+                className="text-lg font-semibold text-purple-700 mb-3 h-14 flex items-center justify-center"
               >
                 {stat.label}
               </motion.div>

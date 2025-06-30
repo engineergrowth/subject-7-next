@@ -87,7 +87,7 @@ const ProductProcess = () => {
                     ease: [0.25, 0.46, 0.45, 0.94]
                   }}
                   viewport={{ once: true }}
-                  className="text-2xl font-bold text-orange-500 mb-2"
+                  className="text-2xl font-bold text-purple-700 mb-2"
                 >
                   {String(index + 1).padStart(2, '0')}
                 </motion.div>
