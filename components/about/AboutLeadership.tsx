@@ -43,7 +43,7 @@ const AboutLeadership = () => {
             
             <div className="border-l-4 border-purple-800 pl-6">
               <h3 className="text-2xl font-bold text-white mb-2">Kezia "Z" Braithwaite</h3>
-              <p className="text-orange-500 text-lg mb-4">CEO & Co-Founder</p>
+              <p className="text-purple-700 text-lg mb-4">CEO & Co-Founder</p>
               <p className="text-gray-300 leading-relaxed">
                 With over 20 years in enterprise technology, Z leads Subject7's mission to democratize 
                 test automation. Previously working with major government contractors, she understands the 
