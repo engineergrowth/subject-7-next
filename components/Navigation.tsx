@@ -30,10 +30,10 @@ const Navigation = () => {
               <Link
                 key={idx}
                 href={item.href}
-                className="text-base font-medium text-gray-100 hover:text-purple-400 transition-colors duration-300 relative group"
+                className="text-base font-medium text-gray-100 hover:text-purple-700 transition-colors duration-300 relative group"
               >
                 {item.name}
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-purple-400 to-blue-400 group-hover:w-full transition-all duration-300"></span>
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-purple-800 to-purple-700 group-hover:w-full transition-all duration-300"></span>
               </Link>
             ))}
             
@@ -52,7 +52,7 @@ const Navigation = () => {
           <div className="hidden md:block flex-shrink-0">
             <a
               href="https://platform.subject7.com/"
-              className="text-base font-medium text-gray-300 hover:text-purple-400 transition-colors duration-300 border-l border-gray-700 pl-6 whitespace-nowrap"
+              className="text-base font-medium text-gray-300 hover:text-purple-700 transition-colors duration-300 border-l border-gray-700 pl-6 whitespace-nowrap"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -64,7 +64,7 @@ const Navigation = () => {
           <div className="md:hidden flex-shrink-0">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="text-white hover:text-purple-400 transition-colors p-2 -mr-2"
+              className="text-white hover:text-purple-700 transition-colors p-2 -mr-2"
               aria-label="Toggle menu"
             >
               {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -80,7 +80,7 @@ const Navigation = () => {
                 key={idx}
                 href={item.href}
                 onClick={() => setIsMenuOpen(false)}
-                className="block text-base font-medium text-gray-100 hover:text-purple-400 py-2 transition-colors duration-300 w-full"
+                className="block text-base font-medium text-gray-100 hover:text-purple-700 py-2 transition-colors duration-300 w-full"
               >
                 {item.name}
               </Link>
@@ -103,7 +103,7 @@ const Navigation = () => {
                 href="https://platform.subject7.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block text-base font-medium text-gray-300 hover:text-purple-400 py-2 transition-colors duration-300 w-full"
+                className="block text-base font-medium text-gray-300 hover:text-purple-700 py-2 transition-colors duration-300 w-full"
               >
                 Customer Login →
               </a>
