@@ -39,8 +39,7 @@ const Testimonials = () => {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.2, ease: [0.25, 0.46, 0.45, 0.94] }}
             viewport={{ once: true, margin: "-100px" }}
-            className="w-full lg:w-1/2 h-[600px] relative"
-            style={{ overflow: 'hidden' }}
+            className="w-full lg:w-1/2 h-[600px] overflow-hidden relative hide-scrollbar"
           >
             <motion.div
               className="flex flex-col gap-6"
