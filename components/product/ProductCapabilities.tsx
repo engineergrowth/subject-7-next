@@ -108,7 +108,7 @@ const ProductCapabilities = () => {
             Complete Testing Coverage
           </h2>
           <p className="text-xl text-gray-300 max-w-4xl mx-auto leading-relaxed">
-            Subject7 provides comprehensive automation across every layer of your application stack, 
+            Subject7 provides comprehensive automation across every layer of your application, 
             from frontend interfaces to backend databases, ensuring complete quality coverage.
           </p>
         </motion.div>
