@@ -186,7 +186,7 @@ const ProductCapabilities = () => {
                         viewport={{ once: true }}
                         className="flex items-center space-x-3"
                       >
-                        <CheckCircle className="h-5 w-5 text-orange-400 flex-shrink-0" />
+                        <CheckCircle className="h-5 w-5 flex-shrink-0" style={{color: '#FD7855'}} />
                         <span className="text-gray-300">{feature}</span>
                       </motion.div>
                     ))}

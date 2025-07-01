@@ -117,7 +117,7 @@ const Testimonials = () => {
                           }}
                           viewport={{ once: true }}
                         >
-                          <Star className="text-orange-400 fill-current" size={20} />
+                          <Star className="fill-current" size={20} style={{color: '#FD7855'}} />
                         </motion.div>
                       ))}
                     </div>

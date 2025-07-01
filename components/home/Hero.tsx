@@ -8,7 +8,7 @@ const Hero = () => {
       {/* Background Effects */}
       <div className="absolute inset-0">
         <div className="absolute top-1/4 left-1/4 w-[400px] h-[400px] sm:w-[600px] sm:h-[600px] md:w-[800px] md:h-[800px] bg-purple-900/10 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-1/4 right-1/4 w-[400px] h-[400px] sm:w-[600px] sm:h-[600px] md:w-[800px] md:h-[800px] bg-orange-900/5 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-1/4 right-1/4 w-[400px] h-[400px] sm:w-[600px] sm:h-[600px] md:w-[800px] md:h-[800px] rounded-full blur-3xl" style={{backgroundColor: '#FD7855', opacity: 0.05}}></div>
       </div>
 
       <div className="relative max-w-7xl mx-auto text-center">
