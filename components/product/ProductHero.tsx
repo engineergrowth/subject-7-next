@@ -27,8 +27,7 @@ const ProductHero = () => {
           transition={{ duration: 0.8, delay: 0.3, ease: [0.25, 0.46, 0.45, 0.94] }}
           className="text-xl md:text-2xl text-gray-300 mb-12 max-w-4xl mx-auto leading-relaxed"
         >
-          One unified platform that empowers teams to automate web, desktop, mobile, API, and database testing — 
-          all without writing a single line of code. Scale your QA operations with enterprise-grade reliability.
+          One unified platform that empowers teams to automate web, desktop, mobile, API, and database testing without writing a single line of code. Scale your QA operations with enterprise-grade reliability.
         </motion.p>
 
 
