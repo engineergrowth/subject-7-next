@@ -107,7 +107,7 @@ const ProductCTA = () => {
                 <div className="flex -space-x-2">
                   <div className="w-12 h-12 bg-purple-800 rounded-full border-2 border-gray-800"></div>
                   <div className="w-12 h-12 bg-purple-700 rounded-full border-2 border-gray-800"></div>
-                  <div className="w-12 h-12 bg-orange-500 rounded-full border-2 border-gray-800"></div>
+                  <div className="w-12 h-12 bg-orange-400 rounded-full border-2 border-gray-800"></div>
                 </div>
               </motion.div>
               <motion.blockquote 
