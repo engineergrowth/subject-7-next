@@ -36,7 +36,7 @@ const AboutStats = () => {
                   ease: [0.25, 0.46, 0.45, 0.94]
                 }}
                 viewport={{ once: true }}
-                className="text-5xl lg:text-6xl font-black text-purple-400 mb-4 group-hover:text-purple-300 transition-colors"
+                className="text-5xl lg:text-6xl font-black text-purple-700 mb-4 group-hover:text-purple-300 transition-colors"
               >
                 {stat.value}
               </motion.div>
