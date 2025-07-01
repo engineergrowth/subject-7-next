@@ -5,10 +5,10 @@ import "@/styles/globals.css";
 
 export default function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <div className="bg-gray-950 text-white min-h-screen flex flex-col">
+    <div className="bg-gray-950 text-white">
       <Navigation />
-      <div className="pt-20 flex-1 flex flex-col">
-        <main className="flex-1">
+      <div className="pt-20">
+        <main>
           <Component {...pageProps} />
         </main>
         <Footer />
