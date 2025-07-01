@@ -6,7 +6,7 @@ const AboutStats = () => {
     { value: "2011", label: "Founded" },
     { value: "10M+", label: "Test Runs" },
     { value: "95%", label: "Customer Satisfaction"},
-    { value: "99.9%", label: "Uptime" }
+    { value: "99.999%", label: "Uptime" }
   ];
 
   return (
@@ -36,7 +36,7 @@ const AboutStats = () => {
                   ease: [0.25, 0.46, 0.45, 0.94]
                 }}
                 viewport={{ once: true }}
-                className="text-5xl lg:text-6xl font-black text-purple-700 mb-4 group-hover:text-purple-300 transition-colors"
+                className="text-4xl lg:text-5xl font-black text-purple-700 mb-4 group-hover:text-purple-300 transition-colors"
               >
                 {stat.value}
               </motion.div>

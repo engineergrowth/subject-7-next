@@ -87,7 +87,7 @@ const ProductStats = () => {
                   ease: [0.25, 0.46, 0.45, 0.94]
                 }}
                 viewport={{ once: true }}
-                className="text-6xl font-black text-white mb-6"
+                className="text-5xl font-black text-white mb-6"
               >
                 {stat.value}
               </motion.div>
