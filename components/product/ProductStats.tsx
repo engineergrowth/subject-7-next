@@ -22,7 +22,7 @@ const stats = [
   {
     icon: <Shield className="h-10 w-10" />,
     value: "99.999%",
-    label: "Test Reliability"
+    label: "Uptime"
   }
 ];
 
