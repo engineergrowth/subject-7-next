@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { CircleDot, BarChart3, Rocket, Settings } from "lucide-react";
+import { CircleDot, Network, AlignJustify, Rocket } from "lucide-react";
 
 const steps = [
   {
@@ -10,13 +10,13 @@ const steps = [
     color: "from-purple-700 to-purple-800"
   },
   {
-    icon: <Settings className="h-8 w-8" />,
+    icon: <Network className="h-8 w-8" />,
     title: "Enhance",
     description: "Add validations, test data, and conditional logic through our intuitive visual editor without writing code.",
     color: "from-purple-700 to-purple-800"
   },
   {
-    icon: <BarChart3 className="h-8 w-8" />,
+    icon: <AlignJustify className="h-8 w-8" />,
     title: "Execute",
     description: "Run tests across multiple browsers, devices, and environments with parallel execution and real-time monitoring.",
     color: "from-purple-700 to-purple-800"
