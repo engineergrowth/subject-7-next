@@ -63,7 +63,7 @@ const capabilities = [
     description: "Advanced image recognition and OCR technology for legacy and modern desktop application automation.",
     features: [
       "Comprehensive GUI testing",
-      "Windows, macOS, and Linux support",
+      "Windows, macOS, & Linux support",
       "Test via image, coordinates, or accessibility tree"
     ],
     color: "from-purple-700 to-purple-800"
@@ -73,11 +73,9 @@ const capabilities = [
     title: "Mobile Testing",
     description: "Native and hybrid mobile app testing across iOS and Android platforms with real device support.",
     features: [
-      "Real devices & emulators",
-      "Cross-platform testing",
-      "Touch gesture automation",
-      "Mobile-specific assertions",
-      "App store validation"
+      "IOS & Android automation",
+      "Native & hybrid app testing",
+      "Run on local or cloud emulators"
     ],
     color: "from-purple-700 to-purple-800"
   }
