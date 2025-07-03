@@ -3,7 +3,6 @@ import React from "react";
 import { motion } from "framer-motion";
 import {
   Globe,
-  Network,
   Database,
   GaugeCircle,
   AppWindow,

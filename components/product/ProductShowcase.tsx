@@ -39,9 +39,7 @@ const ProductShowcase = () => {
           viewport={{ once: true, margin: "-100px" }}
           className="text-center mb-20"
         >
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            Experience the power of unified test automation through our intuitive interface
-          </p>
+
         </motion.div>
 
         <div className="space-y-16">
