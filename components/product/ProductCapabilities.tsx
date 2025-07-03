@@ -8,7 +8,7 @@ import {
   GaugeCircle,
   AppWindow,
   Smartphone,
-  Eye,
+  Plug,
   CheckCircle
 } from "lucide-react";
 
@@ -25,7 +25,7 @@ const capabilities = [
     color: "from-purple-800 to-purple-700"
   },
   {
-    icon: <Network size={32} />,
+    icon: <Plug size={32} />,
     title: "API Testing",
     description: "Comprehensive REST and SOAP service validation with advanced assertion capabilities and seamless integration.",
     features: [
