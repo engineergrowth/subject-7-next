@@ -72,7 +72,7 @@ const ProductStats = () => {
                   damping: 15
                 }}
                 viewport={{ once: true }}
-                className="inline-flex items-center justify-center w-20 h-20 bg-purple-600 rounded-xl mb-6 group-hover:scale-110 transition-transform shadow-lg mx-auto"
+                className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-r from-purple-700 to-purple-800 rounded-xl mb-6 group-hover:scale-110 transition-transform shadow-lg mx-auto"
               >
                 {React.cloneElement(stat.icon, { className: "h-10 w-10 text-white" })}
               </motion.div>

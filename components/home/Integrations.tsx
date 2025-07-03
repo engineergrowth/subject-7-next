@@ -8,13 +8,13 @@ import React from 'react';
 
 const Integrations = () => {
   const integrations = [
-    { name: "Jira", icon: SiJira, color: "bg-purple-800" },
-    { name: "GitHub", icon: FaGithub, color: "bg-purple-800" },
-    { name: "Jenkins", icon: FaJenkins, color: "bg-purple-800" },
-    { name: "GitLab", icon: FaGitlab, color: "bg-purple-800" },
-    { name: "Slack", icon: FaSlack, color: "bg-purple-800" },
-    { name: "Azure", icon: FaMicrosoft, color: "bg-purple-800" },
-    { name: "Bitbucket", icon: FaBitbucket, color: "bg-purple-800" },
+    { name: "Jira", icon: SiJira, color: "bg-gradient-to-r from-purple-700 to-purple-800" },
+    { name: "GitHub", icon: FaGithub, color: "bg-gradient-to-r from-purple-700 to-purple-800" },
+    { name: "Jenkins", icon: FaJenkins, color: "bg-gradient-to-r from-purple-700 to-purple-800" },
+    { name: "GitLab", icon: FaGitlab, color: "bg-gradient-to-r from-purple-700 to-purple-800" },
+    { name: "Slack", icon: FaSlack, color: "bg-gradient-to-r from-purple-700 to-purple-800" },
+    { name: "Azure", icon: FaMicrosoft, color: "bg-gradient-to-r from-purple-700 to-purple-800" },
+    { name: "Bitbucket", icon: FaBitbucket, color: "bg-gradient-to-r from-purple-700 to-purple-800" },
   ];
 
 
@@ -108,7 +108,7 @@ const Integrations = () => {
                     href="https://calendly.com/d/csyv-3fx-d89/new-meeting"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="bg-purple-800 hover:bg-purple-700 text-white py-4 px-8 rounded-xl font-semibold text-lg shadow-lg hover:shadow-xl transition-all duration-300 flex items-center gap-3 group"
+                    className="bg-gradient-to-r from-purple-700 to-purple-800 hover:from-purple-600 hover:to-purple-700 text-white py-4 px-8 rounded-xl font-semibold text-lg shadow-lg hover:shadow-xl transition-all duration-300 flex items-center gap-3 group"
                   >
                     Schedule a Demo
                     <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform duration-300" />

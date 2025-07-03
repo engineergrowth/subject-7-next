@@ -62,7 +62,7 @@ const AboutValues = () => {
                   stiffness: 150,
                   damping: 15
                 }}
-                className="w-16 h-16 rounded-xl bg-purple-800 flex items-center justify-center mb-6"
+                className="w-16 h-16 rounded-xl bg-gradient-to-r from-purple-700 to-purple-800 flex items-center justify-center mb-6"
               >
                 <value.icon className="text-white" size={28} />
               </motion.div>

@@ -54,7 +54,7 @@ const AboutJourney = () => {
             >
               {/* Timeline connector line */}
               {index < milestones.length - 1 && (
-                <div className="hidden lg:block absolute top-16 left-full w-8 h-0.5 bg-gradient-to-r from-purple-800 to-transparent z-10" />
+                <div className="hidden lg:block absolute top-16 left-full w-8 h-0.5 bg-gradient-to-r from-purple-700 to-transparent z-10" />
               )}
               
               <div className="bg-gradient-to-br from-gray-800/80 to-gray-900/80 backdrop-blur-sm p-8 rounded-2xl border border-gray-700 hover:border-purple-500/50 transition-all duration-500 group-hover:transform group-hover:scale-105 h-full">
@@ -71,7 +71,7 @@ const AboutJourney = () => {
                   viewport={{ once: true }}
                   className="relative mb-6"
                 >
-                  <div className="w-16 h-16 bg-purple-800 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
+                  <div className="w-16 h-16 bg-gradient-to-r from-purple-700 to-purple-800 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
                     <span className="text-white font-bold text-lg">{milestone.year}</span>
                   </div>
                 </motion.div>
@@ -106,7 +106,7 @@ const AboutJourney = () => {
           whileInView={{ scaleX: 1 }}
           transition={{ duration: 2, delay: 0.5 }}
           viewport={{ once: true }}
-          className="mt-16 h-1 bg-gradient-to-r from-purple-800 via-purple-700 to-purple-800 rounded-full mx-auto max-w-2xl origin-left"
+          className="mt-16 h-1 bg-gradient-to-r from-purple-700 via-purple-800 to-purple-700 rounded-full mx-auto max-w-2xl origin-left"
         />
         
         <motion.p 

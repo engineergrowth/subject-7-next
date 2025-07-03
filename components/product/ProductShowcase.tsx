@@ -83,7 +83,7 @@ const ProductShowcase = () => {
                       damping: 15
                     }}
                     viewport={{ once: true }}
-                    className="w-12 h-12 bg-purple-800 rounded-xl flex items-center justify-center shadow-lg"
+                    className="w-12 h-12 bg-gradient-to-r from-purple-700 to-purple-800 rounded-xl flex items-center justify-center shadow-lg"
                   >
                     {React.cloneElement(item.icon, { className: "text-white" })}
                   </motion.div>

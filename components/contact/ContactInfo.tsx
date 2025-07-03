@@ -9,28 +9,28 @@ const ContactInfo = () => {
       title: "Email Support",
       description: "Get help from our team",
       value: "support@subject7.com",
-      color: "bg-purple-800"
+      color: "bg-gradient-to-r from-purple-700 to-purple-800"
     },
     {
       icon: <MessageSquare className="h-6 w-6" />,
       title: "Sales Inquiries",
       description: "Learn about our solutions",
       value: "sales@subject7.com",
-      color: "bg-purple-800"
+      color: "bg-gradient-to-r from-purple-700 to-purple-800"
     },
     {
       icon: <Headphones className="h-6 w-6" />,
       title: "Customer Success",
       description: "Existing customer support",
       value: "success@subject7.com",
-      color: "bg-purple-800"
+      color: "bg-gradient-to-r from-purple-700 to-purple-800"
     },
     {
       icon: <Clock className="h-6 w-6" />,
       title: "Response Time",
       description: "We're quick to respond",
       value: "Within 24 hours",
-      color: "bg-purple-800"
+      color: "bg-gradient-to-r from-purple-700 to-purple-800"
     }
   ];
 

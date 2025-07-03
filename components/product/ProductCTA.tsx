@@ -65,7 +65,7 @@ const ProductCTA = () => {
                 <Button 
                   size="lg"
                   asChild
-                  className="bg-purple-800 hover:bg-purple-700 text-white px-12 py-6 text-xl font-semibold shadow-lg hover:shadow-xl transition-all duration-300"
+                  className="bg-gradient-to-r from-purple-700 to-purple-800 hover:from-purple-600 hover:to-purple-700 text-white px-12 py-6 text-xl font-semibold shadow-lg hover:shadow-xl transition-all duration-300"
                 >
                   <a href="https://calendly.com/d/csyv-3fx-d89/new-meeting" target="_blank" rel="noopener noreferrer">
                     <Calendar className="mr-3 h-6 w-6" />
@@ -105,8 +105,8 @@ const ProductCTA = () => {
                 className="flex items-center justify-center mb-6"
               >
                 <div className="flex -space-x-2">
-                  <div className="w-12 h-12 bg-purple-800 rounded-full border-2 border-gray-800"></div>
-                  <div className="w-12 h-12 bg-purple-700 rounded-full border-2 border-gray-800"></div>
+                  <div className="w-12 h-12 rounded-full border-2 border-gray-800 bg-gradient-to-r from-purple-700 to-purple-800"></div>
+                  <div className="w-12 h-12 rounded-full border-2 border-gray-800 bg-gradient-to-r from-purple-700 to-purple-800"></div>
                   <div className="w-12 h-12 rounded-full border-2 border-gray-800" style={{backgroundColor: '#FD7855'}}></div>
                 </div>
               </motion.div>

@@ -19,14 +19,11 @@ const AboutLeadership = () => {
             viewport={{ once: true }}
             className="lg:w-1/3"
           >
-            <div className="relative">
-              <img
-                src="/z.webp"
-                alt="Subject7 CEO and Founder - Leading test automation innovation"
-                className="w-64 h-64 rounded-2xl object-cover border-4 border-gradient-to-r from-purple-600 to-blue-600"
-              />
-            
-            </div>
+            <img
+              src="/z.webp"
+              alt="Subject7 CEO and Founder - Leading test automation innovation"
+              className="w-64 h-64 rounded-2xl object-cover"
+            />
           </motion.div>
           
           <motion.div
@@ -41,7 +38,7 @@ const AboutLeadership = () => {
               Our vision is simple: make comprehensive test automation accessible to every team, regardless of technical expertise."
             </blockquote>
             
-            <div className="border-l-4 border-purple-800 pl-6">
+            <div className="border-l-4 border-purple-700 pl-6">
               <h3 className="text-2xl font-bold text-white mb-2">Kezia "Z" Braithwaite</h3>
               <p className="text-purple-700 text-lg mb-4">CEO & Co-Founder</p>
               <p className="text-gray-300 leading-relaxed">

@@ -24,7 +24,7 @@ const capabilities = [
       "Self-healing test scripts",
       "Visual regression testing"
     ],
-    color: "from-purple-800 to-purple-700"
+    color: "from-purple-700 to-purple-800"
   },
   {
     icon: <Network size={32} />,
@@ -37,7 +37,7 @@ const capabilities = [
       "Response assertions",
       "API chaining workflows"
     ],
-    color: "from-purple-800 to-purple-700"
+    color: "from-purple-700 to-purple-800"
   },
   {
     icon: <Database size={32} />,
@@ -50,7 +50,7 @@ const capabilities = [
       "No SQL knowledge required",
       "Real-time data validation"
     ],
-    color: "from-purple-800 to-purple-700"
+    color: "from-purple-700 to-purple-800"
   },
   {
     icon: <GaugeCircle size={32} />,
@@ -63,7 +63,7 @@ const capabilities = [
       "Performance benchmarking",
       "Stress test scenarios"
     ],
-    color: "from-purple-800 to-purple-700"
+    color: "from-purple-700 to-purple-800"
   },
   {
     icon: <AppWindow size={32} />,
@@ -76,7 +76,7 @@ const capabilities = [
       "Windows compatibility",
       "Thick client automation"
     ],
-    color: "from-purple-800 to-purple-700"
+    color: "from-purple-700 to-purple-800"
   },
   {
     icon: <Smartphone size={32} />,
@@ -89,7 +89,7 @@ const capabilities = [
       "Mobile-specific assertions",
       "App store validation"
     ],
-    color: "from-purple-800 to-purple-700"
+    color: "from-purple-700 to-purple-800"
   }
 ];
 

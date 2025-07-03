@@ -34,7 +34,7 @@ const AboutCTA = () => {
           <Button
             size="lg"
             asChild
-            className="bg-purple-800 hover:bg-purple-700 text-white px-12 py-6 text-xl font-semibold shadow-lg hover:shadow-xl transition-all duration-300"
+            className="bg-gradient-to-r from-purple-700 to-purple-800 hover:from-purple-600 hover:to-purple-700 text-white px-12 py-6 text-xl font-semibold shadow-lg hover:shadow-xl transition-all duration-300"
           >
             <a href="https://calendly.com/d/csyv-3fx-d89/new-meeting" target="_blank" rel="noopener noreferrer">
               <Calendar className="mr-3 h-6 w-6" />

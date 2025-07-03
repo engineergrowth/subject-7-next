@@ -7,25 +7,25 @@ const steps = [
     icon: <Play className="h-8 w-8" />,
     title: "Record",
     description: "Simply interact with your application while Subject7 intelligently captures every action and creates resilient test scripts.",
-    color: "from-purple-800 to-purple-700"
+    color: "from-purple-700 to-purple-800"
   },
   {
     icon: <Settings className="h-8 w-8" />,
     title: "Enhance",
     description: "Add validations, test data, and conditional logic through our intuitive visual editor without writing code.",
-    color: "from-purple-800 to-purple-700"
+    color: "from-purple-700 to-purple-800"
   },
   {
     icon: <BarChart3 className="h-8 w-8" />,
     title: "Execute",
     description: "Run tests across multiple browsers, devices, and environments with parallel execution and real-time monitoring.",
-    color: "from-purple-800 to-purple-700"
+    color: "from-purple-700 to-purple-800"
   },
   {
     icon: <Rocket className="h-8 w-8" />,
     title: "Scale",
     description: "Integrate with CI/CD pipelines, schedule automated runs, and generate comprehensive reports for stakeholders.",
-    color: "from-purple-800 to-purple-700"
+    color: "from-purple-700 to-purple-800"
   }
 ];
 

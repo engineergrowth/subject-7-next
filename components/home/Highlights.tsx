@@ -8,28 +8,28 @@ const Highlights = () => {
       title: "Unified Test Automation",
       description:
         "Author, run, and manage tests across web, desktop, API, and DB. One powerful platform, total coverage.",
-      color: "bg-purple-800"
+      color: "bg-gradient-to-r from-purple-700 to-purple-800"
     },
     {
       icon: Layers3,
       title: "Codeless by Design",
       description:
         "Build tests visually without writing code. Empower QA teams to move fast with confidence.",
-      color: "bg-purple-800"
+      color: "bg-gradient-to-r from-purple-700 to-purple-800"
     },
     {
       icon: Server,
       title: "CI/CD Ready",
       description:
         "Connect seamlessly to GitHub, Azure, and other tools to fit right into your existing workflows.",
-      color: "bg-purple-800"
+      color: "bg-gradient-to-r from-purple-700 to-purple-800"
     },
     {
       icon: ShieldCheck,
       title: "Secure & Compliant",
       description:
         "Trusted by leading federal agencies and enterprises alike.",
-      color: "bg-purple-800"
+      color: "bg-gradient-to-r from-purple-700 to-purple-800"
     }
   ];
 
