@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Code, Zap, Users, Settings } from "lucide-react";
+import { Code, Zap, Settings } from "lucide-react";
 
 const showcaseItems = [
   {
@@ -14,17 +14,17 @@ const showcaseItems = [
   },
   {
     icon: <Zap className="h-6 w-6" />,
-    title: "Lightning Fast Execution",
-    description: "Parallel test execution across multiple environments with real-time reporting and instant feedback.",
+    title: "Interactive Dashboard",
+    description: "Gain instant insights with dynamic visualizations for test coverage, failures, performance, and criticality.",
     image: "/exsetss.png",
-    badges: ["Parallel", "Real-time", "Cloud Scale"]
+    badges: ["Insights", "Reporting", "Real-time", "Criticality"]
   },
   {
     icon: <Settings className="h-6 w-6" />,
-    title: "Company Repository",
-    description: "Create, manage, and reuse web locators, data templates, and datasets across all your test suites. Subject7's Company Repository accelerates test creation, ensures consistency, and makes your automation modular and scalable.",
+    title: "Test Run Evidence",
+    description: "Review a full video recording of each test case execution for complete visibility and traceability",
     image: "/locatorsss.png",
-    badges: ["Reusable", "Locators", "Data Templates", "Datasets"]
+    badges: ["Logs", "Recording", "Artifacts"]
   }
 ];
 

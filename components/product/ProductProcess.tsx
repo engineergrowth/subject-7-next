@@ -1,10 +1,10 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { Play, BarChart3, Rocket, Settings } from "lucide-react";
+import { CircleDot, BarChart3, Rocket, Settings } from "lucide-react";
 
 const steps = [
   {
-    icon: <Play className="h-8 w-8" />,
+    icon: <CircleDot className="h-8 w-8" />,
     title: "Record",
     description: "Simply interact with your application while Subject7 intelligently captures every action and creates resilient test scripts.",
     color: "from-purple-700 to-purple-800"
