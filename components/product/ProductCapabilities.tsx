@@ -62,11 +62,9 @@ const capabilities = [
     title: "Desktop Testing",
     description: "Advanced image recognition and OCR technology for legacy and modern desktop application automation.",
     features: [
-      "Image recognition",
-      "OCR capabilities",
-      "Legacy app support",
-      "Windows compatibility",
-      "Thick client automation"
+      "Comprehensive GUI testing",
+      "Windows, macOS, and Linux support",
+      "Test via image, coordinates, or accessibility tree"
     ],
     color: "from-purple-700 to-purple-800"
   },
