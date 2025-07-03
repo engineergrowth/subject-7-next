@@ -15,55 +15,47 @@ import {
 const capabilities = [
   {
     icon: <Globe size={32} />,
-    title: "Web Testing",
-    description: "True codeless test case authoring with smart XPath generation and resilient locators that eliminate test maintenance.",
+   title: "Web Testing",
+    description: "True codeless test case authoring with smart XPath generation and resilient locators.",
     features: [
-      "Record & Play functionality",
-      "Smart XPath generation",
-      "Cross-browser compatibility",
-      "Self-healing test scripts",
-      "Visual regression testing"
+      "Parallel test execution",
+      "Codeless Record & Play functionality",
+      "Cross-browser agents"
     ],
-    color: "from-purple-700 to-purple-800"
+    color: "from-purple-800 to-purple-700"
   },
   {
     icon: <Network size={32} />,
     title: "API Testing",
     description: "Comprehensive REST and SOAP service validation with advanced assertion capabilities and seamless integration.",
     features: [
-      "REST & SOAP services",
-      "JSON/XML validation",
-      "Dynamic test variables",
-      "Response assertions",
-      "API chaining workflows"
+      "Request/response validation",
+      "Payload validation",
+      "Authentication & authorization"
     ],
-    color: "from-purple-700 to-purple-800"
+    color: "from-purple-800 to-purple-700"
   },
   {
     icon: <Database size={32} />,
     title: "Database Testing",
-    description: "Automated backend validation with support for all major databases and SQL-free test creation.",
+    description: "Automated backend validation with supprt for all major databases and streamlined SQL-based test creation.",
     features: [
-      "Pre/post test queries",
-      "Data-driven testing",
+      "Real-time data validation/vertification",
       "Multi-database support",
-      "No SQL knowledge required",
-      "Real-time data validation"
+      "Data Integrity checks"
     ],
-    color: "from-purple-700 to-purple-800"
+    color: "from-purple-800 to-purple-700"
   },
   {
     icon: <GaugeCircle size={32} />,
     title: "Performance Testing",
     description: "Cloud-scale load testing with detailed performance metrics and bottleneck identification.",
     features: [
-      "Cloud scalability",
-      "1000s of virtual users",
-      "Real-time monitoring",
-      "Performance benchmarking",
-      "Stress test scenarios"
+      "Load testing",
+      "Stress testing",
+      "Spike testing"
     ],
-    color: "from-purple-700 to-purple-800"
+    color: "from-purple-800 to-purple-700"
   },
   {
     icon: <AppWindow size={32} />,
