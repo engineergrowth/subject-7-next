@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { CircleDot, Network, AlignJustify, Rocket } from "lucide-react";
+import { CircleDot, Network, Zap, Rocket } from "lucide-react";
 
 const steps = [
   {
@@ -16,7 +16,7 @@ const steps = [
     color: "from-purple-700 to-purple-800"
   },
   {
-    icon: <AlignJustify className="h-8 w-8" />,
+    icon: <Zap className="h-8 w-8" />,
     title: "Execute",
     description: "Run tests across multiple browsers, devices, and environments with parallel execution and real-time monitoring.",
     color: "from-purple-700 to-purple-800"
