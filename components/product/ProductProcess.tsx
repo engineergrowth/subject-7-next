@@ -73,7 +73,7 @@ const ProductProcess = () => {
                     damping: 15
                   }}
                   viewport={{ once: true }}
-                  className={`w-20 h-20 mx-auto mb-6 rounded-2xl bg-gradient-to-br ${step.color} flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg`}
+                  className={`w-20 h-20 mx-auto mb-6 rounded-2xl bg-gradient-to-r ${step.color} flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg`}
                 >
                   {React.cloneElement(step.icon, { className: "text-white" })}
                 </motion.div>

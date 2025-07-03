@@ -139,7 +139,7 @@ const ProductCapabilities = () => {
                     damping: 15
                   }}
                   viewport={{ once: true }}
-                  className={`w-20 h-20 rounded-2xl bg-gradient-to-br ${capability.color} flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg`}
+                  className={`w-20 h-20 rounded-2xl bg-gradient-to-r ${capability.color} flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg`}
                 >
                   {React.cloneElement(capability.icon, { className: "text-white" })}
                 </motion.div>
